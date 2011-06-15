@@ -1,0 +1,306 @@
+\section{Edge Class Reference}
+\label{classEdge}\index{Edge@{Edge}}
+Classe repr\~{A}©sentant une arete (demi-arete), soit, deux sommets relies entre eux dans un ordre precis.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Edge} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Edge} (int \_\-ID, \bf{Vertex} $\ast$\_\-tail, \bf{Vertex} $\ast$\_\-head)
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Edge} (const \bf{Edge} \&\_\-e)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{$\sim$Edge} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Edge} \& \textbf{operator=} (const \bf{Edge} \&\_\-e)\label{classEdge_ce0eab563070c56c1bb4b715ff3d98fd}
+
+\item 
+int \bf{get\-ID} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Vertex} $\ast$ \bf{get\-Tail} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Vertex} $\ast$ \bf{get\-Head} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Edge} $\ast$ \bf{get\-Twin} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+vector$<$ \bf{Face} $\ast$ $>$ \bf{get\-Faces} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Face} $\ast$ \bf{get\-IFace} (int \_\-i)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{to\-Vector} ()
+\begin{CompactList}\small\item\em Convert an edge to a 3 dimension vector. \item\end{CompactList}\item 
+void \bf{set\-ID} (int \_\-ID)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+void \bf{set\-Tail} (\bf{Vertex} $\ast$\_\-tail)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+void \bf{set\-Head} (\bf{Vertex} $\ast$\_\-head)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+void \bf{set\-Twin} (\bf{Edge} $\ast$\_\-twin)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+void \bf{set\-Faces} (vector$<$ \bf{Face} $\ast$ $>$ \_\-faces)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Edge}{p.}{classEdge} class. \item\end{CompactList}\item 
+void \bf{add\-Face} (\bf{Face} $\ast$\_\-f)
+\begin{CompactList}\small\item\em Adds a face to the edge. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int \textbf{id}\label{classEdge_0d046839addeb94825829577b6215542}
+
+\item 
+\bf{Vertex} $\ast$ \bf{tail}
+\item 
+\bf{Vertex} $\ast$ \bf{head}
+\item 
+\bf{Edge} $\ast$ \bf{twin}
+\item 
+vector$<$ \bf{Face} $\ast$ $>$ \bf{faces}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant une arete (demi-arete), soit, deux sommets relies entre eux dans un ordre precis. 
+
+Une arete (demi-arete) est representee par ses elements les plus courant, a savoir : deux sommets, l'un en tete et l'autre en queue - ce qui permet de connaitre le sens de l'arete - un identifiant qui devrait etre unique pour chaque arete (demi-arete) d'un meme maillage et un pointeur vers sa (demi-arete) jumelle. Sa jumelle etant l'arete dont la tete correspond a la queue de celle-ci et vice versa. Les informations de voisinnage s'obtiennent par le biais d'un tableau de faces contenant toutes les faces qui contiennent cette arete. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Edge::Edge ()}\label{classEdge_25cdda2a0ecc5781a470cc2dfbfdc3c7}
+
+
+Default constructor of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Default constructor of the \doxyref{Edge}{p.}{classEdge} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Edge::Edge (int {\em \_\-ID}, \bf{Vertex} $\ast$ {\em \_\-tail}, \bf{Vertex} $\ast$ {\em \_\-head})}\label{classEdge_5113aae1616f38f615d465da8d363694}
+
+
+Default constructor of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Default constructor of the \doxyref{Edge}{p.}{classEdge} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Edge::Edge (const \bf{Edge} \& {\em \_\-e})}\label{classEdge_ca246fcb2cab336fe9583430bd0a5470}
+
+
+Copy constructor of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Copy constructor of the \doxyref{Edge}{p.}{classEdge} class. \index{Edge@{Edge}!~Edge@{$\sim$Edge}}
+\index{~Edge@{$\sim$Edge}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Edge::$\sim$Edge ()}\label{classEdge_e60213274546224c60151d9d21fbddb5}
+
+
+Destructor of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Destructor of the \doxyref{Edge}{p.}{classEdge} class. 
+
+\subsection{Member Function Documentation}
+\index{Edge@{Edge}!addFace@{addFace}}
+\index{addFace@{addFace}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Edge::add\-Face (\bf{Face} $\ast$ {\em \_\-f})}\label{classEdge_316da91c0d7cf367c81be320fb264c99}
+
+
+Adds a face to the edge. 
+
+Adds a given face to the edge.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-f}]: face to add to the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Edge@{Edge}!getFaces@{getFaces}}
+\index{getFaces@{getFaces}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Face}$\ast$$>$ Edge::get\-Faces ()}\label{classEdge_bcf7b770593681f3fdefff1c04981899}
+
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$Face$\ast$$>$) returns a vector containing the faces that contain the edge. \end{Desc}
+\index{Edge@{Edge}!getHead@{getHead}}
+\index{getHead@{getHead}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vertex}$\ast$ Edge::get\-Head ()}\label{classEdge_7cae0bfacc6c5ce4b61c538f0cd4ce1a}
+
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Returns:](Vertex$\ast$) returns a pointer to the vertex which is the head of the edge. \end{Desc}
+\index{Edge@{Edge}!getID@{getID}}
+\index{getID@{getID}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Edge::get\-ID ()}\label{classEdge_f88a1e08790cc7d2ef1d7020d7b86ba8}
+
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the ID of the edge. \end{Desc}
+\index{Edge@{Edge}!getIFace@{getIFace}}
+\index{getIFace@{getIFace}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Face}$\ast$ Edge::get\-IFace (int {\em \_\-i})}\label{classEdge_8208a1662303fb3334ac4ec747362e3f}
+
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the face to return;\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](Face$\ast$) returns a pointer to the ith face in the face array of the edge; \end{Desc}
+\index{Edge@{Edge}!getTail@{getTail}}
+\index{getTail@{getTail}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vertex}$\ast$ Edge::get\-Tail ()}\label{classEdge_d791e8f4c073d715aab6f3092e61758e}
+
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Returns:](Vertex$\ast$) returns a pointer to the vertex which is the tail of the edge. \end{Desc}
+\index{Edge@{Edge}!getTwin@{getTwin}}
+\index{getTwin@{getTwin}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Edge}$\ast$ Edge::get\-Twin ()}\label{classEdge_2b42184de0b733483d594ff1801acdf1}
+
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Getter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Returns:](\doxyref{Edge}{p.}{classEdge}) returns a pointer to the twin edge of the edge. \end{Desc}
+\index{Edge@{Edge}!setFaces@{setFaces}}
+\index{setFaces@{setFaces}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Edge::set\-Faces (vector$<$ \bf{Face} $\ast$ $>$ {\em \_\-faces})}\label{classEdge_53b73ee85b56af7880599fa9f03e1b81}
+
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-faces}]: vector containing faces to affect to the faces attribut of the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Edge@{Edge}!setHead@{setHead}}
+\index{setHead@{setHead}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Edge::set\-Head (\bf{Vertex} $\ast$ {\em \_\-head})}\label{classEdge_2c326f7c4aeeba635f7ac21d27183a15}
+
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-head}]: pointer to the vertex to affect to the head of the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Edge@{Edge}!setID@{setID}}
+\index{setID@{setID}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Edge::set\-ID (int {\em \_\-ID})}\label{classEdge_6bb306e67cc8485d8fbe53283a52d92a}
+
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-ID}]: ID to affect to the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Edge@{Edge}!setTail@{setTail}}
+\index{setTail@{setTail}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Edge::set\-Tail (\bf{Vertex} $\ast$ {\em \_\-tail})}\label{classEdge_ffc8e0100c468bfdc5a4acf165776591}
+
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-tail}]: pointer to the vertex to affect to the tail of the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Edge@{Edge}!setTwin@{setTwin}}
+\index{setTwin@{setTwin}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Edge::set\-Twin (\bf{Edge} $\ast$ {\em \_\-twin})}\label{classEdge_285e34214429db14aef1e6f3be8dbfab}
+
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class. 
+
+Setter of the \doxyref{Edge}{p.}{classEdge} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-twin}]: pointer to the edge affect to the twin of the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Edge@{Edge}!toVector@{toVector}}
+\index{toVector@{toVector}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Edge::to\-Vector ()}\label{classEdge_6b937bd55b86d6722a9b86ecf4af106e}
+
+
+Convert an edge to a 3 dimension vector. 
+
+Convert an edge to the 3 dimension vector defined as (head - tail).
+
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) returns a vector computed as (head - tail). \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Edge@{Edge}!faces@{faces}}
+\index{faces@{faces}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Face}$\ast$$>$ Edge::faces\hspace{0.3cm}{\tt  [private]}}\label{classEdge_4afa6698dcd7844bcc6bcc88001b0401}
+
+
+$<$Pointer to the twin edge (the \char`\"{}opposote\char`\"{} edge). \index{Edge@{Edge}!head@{head}}
+\index{head@{head}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vertex}$\ast$ Edge::head\hspace{0.3cm}{\tt  [private]}}\label{classEdge_e4efeb3dff2413fa01091124c5db989d}
+
+
+$<$Pointer to the tail vertex of the edge. \index{Edge@{Edge}!tail@{tail}}
+\index{tail@{tail}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vertex}$\ast$ Edge::tail\hspace{0.3cm}{\tt  [private]}}\label{classEdge_32e8d83ce6d9659dfdee90cc7d402344}
+
+
+$<$ID of the egde. \index{Edge@{Edge}!twin@{twin}}
+\index{twin@{twin}!Edge@{Edge}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Edge}$\ast$ Edge::twin\hspace{0.3cm}{\tt  [private]}}\label{classEdge_57fc4493da29968e26329d83afec94fb}
+
+
+$<$Pointer to the head vertex of tyhe edge. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/GMTOOLS\_\-CPP/inc/\bf{define.h}\end{CompactItemize}

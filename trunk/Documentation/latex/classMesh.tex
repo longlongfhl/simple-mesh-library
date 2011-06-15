@@ -1,0 +1,834 @@
+\section{Mesh Class Reference}
+\label{classMesh}\index{Mesh@{Mesh}}
+Classe repr\~{A}©sentant un maillage grace a une structure de demi aretes.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Mesh} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+\bf{Mesh} (const \bf{Mesh} \&\_\-m)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+\bf{$\sim$Mesh} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+\bf{Mesh} \& \bf{operator=} (const \bf{Mesh} \&\_\-m)
+\begin{CompactList}\small\item\em Affectation operator of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+int \bf{get\-ID} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+int \bf{get\-NVerts} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+int \bf{get\-NEdges} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+int \bf{get\-NFaces} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+vector$<$ \bf{Vertex} $\ast$ $>$ \bf{get\-Verts} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+\bf{Vertex} $\ast$ \bf{get\-IVert} (int \_\-i)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+vector$<$ \bf{Edge} $\ast$ $>$ \bf{get\-Edges} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+\bf{Edge} $\ast$ \bf{get\-IEdge} (int \_\-i)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+vector$<$ \bf{Face} $\ast$ $>$ \bf{get\-Faces} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-ID} (int \_\-ID)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-NVerts} (int \_\-n\-Verts)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-NEdges} (int \_\-n\-Edges)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-NFaces} (int \_\-n\-Faces)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-Verts} (vector$<$ \bf{Vertex} $\ast$ $>$ \_\-verts)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-Edges} (vector$<$ \bf{Edge} $\ast$ $>$ \_\-edges)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{set\-Faces} (vector$<$ \bf{Face} $\ast$ $>$ \_\-faces)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Mesh}{p.}{classMesh} class. \item\end{CompactList}\item 
+void \bf{clear} ()
+\begin{CompactList}\small\item\em Clears the mesh informations. \item\end{CompactList}\item 
+int \bf{contains\-Edge} (int \_\-i\-Tail, int \_\-i\-Head)
+\begin{CompactList}\small\item\em Search an edge in the edges vector of the mesh. \item\end{CompactList}\item 
+void \bf{add\-Vertex} (\bf{Vertex} $\ast$\_\-v)
+\begin{CompactList}\small\item\em Adds a vertex to the mesh. \item\end{CompactList}\item 
+void \bf{add\-Edge\-To\-IVertex} (int \_\-i, \bf{Edge} $\ast$\_\-e)
+\begin{CompactList}\small\item\em Adds an edge to the edge vector of a vertex. \item\end{CompactList}\item 
+void \bf{add\-Edge} (\bf{Edge} $\ast$\_\-e)
+\begin{CompactList}\small\item\em Adds an edge to the mesh. \item\end{CompactList}\item 
+void \bf{add\-Face\-To\-IEdge} (int \_\-i, \bf{Face} $\ast$\_\-f)
+\begin{CompactList}\small\item\em Adds a face to the face vector of an edge. \item\end{CompactList}\item 
+void \bf{add\-Face} (\bf{Face} $\ast$\_\-f)
+\begin{CompactList}\small\item\em Adds a face to the mesh. \item\end{CompactList}\item 
+int \bf{load\-OBJ} (char $\ast$\_\-path)
+\begin{CompactList}\small\item\em Loads a wavefront \char`\"{}.obj\char`\"{} mesh. \item\end{CompactList}\item 
+void \bf{compute\-Normals} ()
+\begin{CompactList}\small\item\em Computes the normals of the mesh. \item\end{CompactList}\item 
+void \bf{normalize} ()
+\begin{CompactList}\small\item\em Resize the mesh to a unit-length box. \item\end{CompactList}\item 
+void \bf{print\-Infos} ()
+\begin{CompactList}\small\item\em Print some informations about the mesh in the terminal. \item\end{CompactList}\item 
+void \bf{display\-IVertex} (int \_\-i, float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display one of the vertices of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IVertex} (int \_\-i)
+\begin{CompactList}\small\item\em Open\-GL routine to display one of the vertices of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Vertices} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display the vertices of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Vertices} ()
+\begin{CompactList}\small\item\em Open\-GL routine to display the vertices of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IEdge} (int \_\-i, float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display an edge of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IEdge} (int \_\-i)
+\begin{CompactList}\small\item\em Open\-GL routine to display an edge of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Edges} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display the edges of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Edges} ()
+\begin{CompactList}\small\item\em Open\-GL routine to display the edges of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IFace} (int \_\-i, float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display a face of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IFace} (int \_\-i)
+\begin{CompactList}\small\item\em Open\-GL routine to display a face of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IFace\-Smooth} (int \_\-i, float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display a face of a mesh. \item\end{CompactList}\item 
+void \bf{display\-IFace\-Smooth} (int \_\-i)
+\begin{CompactList}\small\item\em Open\-GL routine to display a face of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Faces} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display the faces of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Faces} ()
+\begin{CompactList}\small\item\em Open\-GL routine to display the faces of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Faces\-Smooth} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display the faces of a mesh. \item\end{CompactList}\item 
+void \bf{display\-Faces\-Smooth} ()
+\begin{CompactList}\small\item\em Open\-GL routine to display the faces of a mesh. \item\end{CompactList}\item 
+void \bf{display} (int \_\-mode, float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Open\-GL routine to display a mesh. \item\end{CompactList}\item 
+void \bf{display} (int \_\-mode)
+\begin{CompactList}\small\item\em Open\-GL routine to display a mesh. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int \textbf{id}\label{classMesh_9c58374fc69e64bd115e7f68d1e0fb77}
+
+\item 
+int \bf{n\-Verts}
+\item 
+int \bf{n\-Edges}
+\item 
+int \bf{n\-Faces}
+\item 
+vector$<$ \bf{Vertex} $\ast$ $>$ \bf{verts}
+\item 
+vector$<$ \bf{Edge} $\ast$ $>$ \bf{edges}
+\item 
+vector$<$ \bf{Face} $\ast$ $>$ \bf{faces}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant un maillage grace a une structure de demi aretes. 
+
+Un maillage est represente par ses principales caracteristiques : son nombre de sommets, d'aretes et de faces. Ainsi que trois vectors (pour des raisons de simplicite nous avons choisi d'utiliser des vectors et non des tableaux alloues dynamiquement) donnant la liste exhaustive de tous ces sommets, demi-aretes et faces du maillage. On attribue aussi a chaque maillage un identifiant qu'il sera preferable de garder unique pour chaque objet.
+
+\begin{Desc}
+\item[\bf{Todo}]Des ameliorations peuvent etre apportes a cette classe, notamment des methodes-outils qui n'existent pas encore, l'ajout d'un attribut de type boumding box ainsi que les methodes qui vont avec (accesseurs/modificateurs, boite a outils, ...) le passage des accesseurs/modificateurs en inline...\end{Desc}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mesh::Mesh ()}\label{classMesh_cc9b1a1afe817e6e4dba821d8c5c23bd}
+
+
+Default constructor of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Default constructor of the \doxyref{Mesh}{p.}{classMesh} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mesh::Mesh (const \bf{Mesh} \& {\em \_\-m})}\label{classMesh_1c000c1d4b74d73a20a22d242d3167ed}
+
+
+Copy constructor of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Copy constructor of the \doxyref{Mesh}{p.}{classMesh} class. \index{Mesh@{Mesh}!~Mesh@{$\sim$Mesh}}
+\index{~Mesh@{$\sim$Mesh}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Mesh::$\sim$Mesh ()}\label{classMesh_34ad00f4750341c826c35fa1089cd91c}
+
+
+Destructor of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Destructor of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+\subsection{Member Function Documentation}
+\index{Mesh@{Mesh}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::add\-Edge (\bf{Edge} $\ast$ {\em \_\-e})}\label{classMesh_4a97a61e66fac862c4c648cd8d78d3c4}
+
+
+Adds an edge to the mesh. 
+
+Adds a pointer on a edge to the edge vector of the mesh and updates the n\-Edges attribute;
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-e}]: pointer on the edge to add;\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!addEdgeToIVertex@{addEdgeToIVertex}}
+\index{addEdgeToIVertex@{addEdgeToIVertex}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::add\-Edge\-To\-IVertex (int {\em \_\-i}, \bf{Edge} $\ast$ {\em \_\-e})}\label{classMesh_7aae7539924d7cfd25528536d2475c9a}
+
+
+Adds an edge to the edge vector of a vertex. 
+
+Adds an edge to the edge vector of the vertex ith.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the vertex we want to add the edge. \item[{\em \_\-e}]: pointer on the edge we want to add.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!addFace@{addFace}}
+\index{addFace@{addFace}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::add\-Face (\bf{Face} $\ast$ {\em \_\-f})}\label{classMesh_1977e532c3ebced2d05cbe823a9fb6fb}
+
+
+Adds a face to the mesh. 
+
+Adds a pointer on a face to the face vector of the mesh and updates the n\-Faces attribute;
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-f}]: pointer on the face to add;\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!addFaceToIEdge@{addFaceToIEdge}}
+\index{addFaceToIEdge@{addFaceToIEdge}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::add\-Face\-To\-IEdge (int {\em \_\-i}, \bf{Face} $\ast$ {\em \_\-f})}\label{classMesh_901a1ababaf06b2ee91a7f7bac653c18}
+
+
+Adds a face to the face vector of an edge. 
+
+Adds a face to the face vector of the ith edge.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the face we want to add the edge. \item[{\em \_\-f}]: pointer on the face we want to add.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::add\-Vertex (\bf{Vertex} $\ast$ {\em \_\-v})}\label{classMesh_dc683d5579c14397a1157362e496eafc}
+
+
+Adds a vertex to the mesh. 
+
+Adds a pointer on a vertex to the vertex vector of the mesh and updates the n\-Verts attribute;
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-v}]: pointer on the vertex to add;\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!clear@{clear}}
+\index{clear@{clear}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::clear ()}\label{classMesh_1fdbea804cb672382c3f801905ecd721}
+
+
+Clears the mesh informations. 
+
+All attributes will be set to 0 (int, float, double, ...), NULL (pointers) or cleared (lists, vectors, stacks, ...).
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!computeNormals@{computeNormals}}
+\index{computeNormals@{computeNormals}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::compute\-Normals ()}\label{classMesh_f43f690d961ef42f2ff0f0594acc9521}
+
+
+Computes the normals of the mesh. 
+
+Computes the normals of every faces and every vertex of the mesh. The computed normals are all normalized.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!containsEdge@{containsEdge}}
+\index{containsEdge@{containsEdge}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::contains\-Edge (int {\em \_\-i\-Tail}, int {\em \_\-i\-Head})}\label{classMesh_72f8ae5f5f601511e885dd0daeb70f5f}
+
+
+Search an edge in the edges vector of the mesh. 
+
+Search an edge defined by its two vertices in the edges vector of the mesh.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i\-Tail}]: index of the tail vertex of the half edge. \item[{\em \_\-i\-Head}]: index of the head vertex of the half edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](int) Returns the index of the edge if the half edge with these two vertices as tail and head is found, -1 else. \end{Desc}
+\index{Mesh@{Mesh}!display@{display}}
+\index{display@{display}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display (int {\em \_\-mode})}\label{classMesh_0d675b3d5bc1fe62f9ff040e49503da6}
+
+
+Open\-GL routine to display a mesh. 
+
+Open\-GL routine to display a mesh in different ways. The color displayed will be the color of the vertices.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!display@{display}}
+\index{display@{display}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display (int {\em \_\-mode}, float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_33a25f454b45544c9140a337e50396d7}
+
+
+Open\-GL routine to display a mesh. 
+
+Open\-GL routine to display a mesh in different ways.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-mode}]: mode we want to display the mesh. Can be VERTICES, EDGES, FACES or SMOOTH. \item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayEdges@{displayEdges}}
+\index{displayEdges@{displayEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Edges ()}\label{classMesh_53a944b1984c93c68ee5817f16b20019}
+
+
+Open\-GL routine to display the edges of a mesh. 
+
+Open\-GL routine to display the edges of a mesh. The color displayed will be the color of the vertices.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayEdges@{displayEdges}}
+\index{displayEdges@{displayEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Edges (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_fed9be2a30ca0abd2a89b964b36f9b60}
+
+
+Open\-GL routine to display the edges of a mesh. 
+
+Open\-GL routine to display the edges of a mesh. !! writes two times every edge in the frame buffer !! ( One per half edge ).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayFaces@{displayFaces}}
+\index{displayFaces@{displayFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Faces ()}\label{classMesh_2af22ee2701eaa936339da8699211bff}
+
+
+Open\-GL routine to display the faces of a mesh. 
+
+Open\-GL routine to display the faces of a mesh. Normals are simply normals to the face. The color displayed will be the color of the vertices.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayFaces@{displayFaces}}
+\index{displayFaces@{displayFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Faces (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_d479a28c0d7e09252aaa185337ca5430}
+
+
+Open\-GL routine to display the faces of a mesh. 
+
+Open\-GL routine to display the faces of a mesh. Normals are simply normals to the face.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayFacesSmooth@{displayFacesSmooth}}
+\index{displayFacesSmooth@{displayFacesSmooth}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Faces\-Smooth ()}\label{classMesh_42a0361a7a43aff03909a33d33c720bf}
+
+
+Open\-GL routine to display the faces of a mesh. 
+
+Open\-GL routine to display the faces of a mesh. The normals are computed with the face vertices normals and are interpolated. The color displayed will be the color of the vertices.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayFacesSmooth@{displayFacesSmooth}}
+\index{displayFacesSmooth@{displayFacesSmooth}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Faces\-Smooth (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_736938f8095c55e5fcf2673f5703f91f}
+
+
+Open\-GL routine to display the faces of a mesh. 
+
+Open\-GL routine to display the faces of a mesh. The normals are computed with the face vertices normals and are interpolated.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIEdge@{displayIEdge}}
+\index{displayIEdge@{displayIEdge}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IEdge (int {\em \_\-i})}\label{classMesh_dedae0d8acd58d6fbcf126d511c9c14c}
+
+
+Open\-GL routine to display an edge of a mesh. 
+
+Open\-GL routine to display an edge of a mesh. The color displayed will be the vertices attached colors.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIEdge@{displayIEdge}}
+\index{displayIEdge@{displayIEdge}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IEdge (int {\em \_\-i}, float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_f758b6a192cbd53ac470df2b8f4242ee}
+
+
+Open\-GL routine to display an edge of a mesh. 
+
+Open\-GL routine to display an edge of a mesh.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the edge to display. \item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIFace@{displayIFace}}
+\index{displayIFace@{displayIFace}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IFace (int {\em \_\-i})}\label{classMesh_97a7e9e8e27369e087e159aa8a18d547}
+
+
+Open\-GL routine to display a face of a mesh. 
+
+Open\-GL routine to display the ith face of a mesh. The normal is simply the normal to the face. The color displayed will be the color of the vertices.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIFace@{displayIFace}}
+\index{displayIFace@{displayIFace}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IFace (int {\em \_\-i}, float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_c5dbe6cfd3354d21a38fdd162f83b9e6}
+
+
+Open\-GL routine to display a face of a mesh. 
+
+Open\-GL routine to display the ith face of a mesh. The normal is simply the normal to the face.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the face to display. \item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIFaceSmooth@{displayIFaceSmooth}}
+\index{displayIFaceSmooth@{displayIFaceSmooth}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IFace\-Smooth (int {\em \_\-i})}\label{classMesh_b17ac916ecba42f05d7e349d0159ac19}
+
+
+Open\-GL routine to display a face of a mesh. 
+
+Open\-GL routine to display the ith face of a mesh. The normal is computed with the face vertices normals and is interpolated. The color displayed will be the color of the vertices.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIFaceSmooth@{displayIFaceSmooth}}
+\index{displayIFaceSmooth@{displayIFaceSmooth}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IFace\-Smooth (int {\em \_\-i}, float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_408ad9808daded0ce66982d998d302ea}
+
+
+Open\-GL routine to display a face of a mesh. 
+
+Open\-GL routine to display the ith face of a mesh. The normal is computed with the face vertices normals and is interpolated.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the face to display. \item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIVertex@{displayIVertex}}
+\index{displayIVertex@{displayIVertex}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IVertex (int {\em \_\-i})}\label{classMesh_0ab46db9e762c633fe12e2dccab45ad9}
+
+
+Open\-GL routine to display one of the vertices of a mesh. 
+
+Open\-GL routine to display one of the vertices of a mesh. The color displayed will be the vertex's color.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the vertex to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayIVertex@{displayIVertex}}
+\index{displayIVertex@{displayIVertex}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-IVertex (int {\em \_\-i}, float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_5ffd7e65f37b29e1f1f30a96aa64c762}
+
+
+Open\-GL routine to display one of the vertices of a mesh. 
+
+Open\-GL routine to display one of the vertices of a mesh.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the vertex to display. \item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayVertices@{displayVertices}}
+\index{displayVertices@{displayVertices}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Vertices ()}\label{classMesh_4a900b654667e3e1d2d31b1071be9688}
+
+
+Open\-GL routine to display the vertices of a mesh. 
+
+Open\-GL routine to display the vertices of a mesh. The color displayed will be the vertices attached colors.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!displayVertices@{displayVertices}}
+\index{displayVertices@{displayVertices}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display\-Vertices (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classMesh_f11cdf9e9094b4ffa1ae11cab1a9b33a}
+
+
+Open\-GL routine to display the vertices of a mesh. 
+
+Open\-GL routine to display the vertices of a mesh.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: red component of the color to display. \item[{\em \_\-g}]: green component of the color to display. \item[{\em \_\-b}]: blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!getEdges@{getEdges}}
+\index{getEdges@{getEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Edge}$\ast$$>$ Mesh::get\-Edges ()}\label{classMesh_4fba54db215977e7676f41e338683974}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$Edge$\ast$$>$) returns an array containing a pointer to each half edge componing the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getFaces@{getFaces}}
+\index{getFaces@{getFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Face}$\ast$$>$ Mesh::get\-Faces ()}\label{classMesh_141c2a823e54605c069a570982224fa2}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$Face$\ast$$>$) returns an array containing a pointer to each face componing the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getID@{getID}}
+\index{getID@{getID}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::get\-ID ()}\label{classMesh_a5b3046b208d9b1e22142b582dc2a213}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the ID of the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getIEdge@{getIEdge}}
+\index{getIEdge@{getIEdge}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Edge}$\ast$ Mesh::get\-IEdge (int {\em \_\-i})}\label{classMesh_a449ea143ff3560d91afd3ba7c7854b3}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the edge we want to be returned.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](Edge$\ast$) returns the ith edge of the mesh; \end{Desc}
+\index{Mesh@{Mesh}!getIVert@{getIVert}}
+\index{getIVert@{getIVert}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vertex}$\ast$ Mesh::get\-IVert (int {\em \_\-i})}\label{classMesh_4c897f18c300336f638f5ab9c3525231}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the vertex we want to be returned.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](Vertex$\ast$) returns a pointer to the ith vertex of the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getNEdges@{getNEdges}}
+\index{getNEdges@{getNEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::get\-NEdges ()}\label{classMesh_4cf53f437b9290ef19d9129b88608b1b}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the number of edges componing the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getNFaces@{getNFaces}}
+\index{getNFaces@{getNFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::get\-NFaces ()}\label{classMesh_1af609ad9c09c21984314fdbdf20f254}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the number of faces componing the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getNVerts@{getNVerts}}
+\index{getNVerts@{getNVerts}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::get\-NVerts ()}\label{classMesh_543d28aaaad2111535596ec273ed084c}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the number of vertices in the mesh. \end{Desc}
+\index{Mesh@{Mesh}!getVerts@{getVerts}}
+\index{getVerts@{getVerts}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Vertex}$\ast$$>$ Mesh::get\-Verts ()}\label{classMesh_9563d67c189e98e298a1109a0890b3a5}
+
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Getter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$Vertex$\ast$$>$) returns an array containing a pointer to each vertex componing the mesh. \end{Desc}
+\index{Mesh@{Mesh}!loadOBJ@{loadOBJ}}
+\index{loadOBJ@{loadOBJ}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::load\-OBJ (char $\ast$ {\em \_\-path})}\label{classMesh_082c9a6b69c41d487edfd50fdc495e97}
+
+
+Loads a wavefront \char`\"{}.obj\char`\"{} mesh. 
+
+Loads a wavefront \char`\"{}.obj\char`\"{} mesh from the \_\-path file. This is a basic version of a loader : does not support the comment lines, the texture lines or the normal lines. This has to be report and fixed. For OBJ format spec., see \tt{http://en.wikipedia.org/wiki/Wavefront\_\-.obj\_\-file.}
+
+\begin{Desc}
+\item[\bf{Todo}]The loader should be rewritten to support the comment lines and other types of format.\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-path}]: location on the disk of the mesh to load.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](int) returns -1 if an issue occured during the operation, 1 else; \end{Desc}
+\index{Mesh@{Mesh}!normalize@{normalize}}
+\index{normalize@{normalize}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::normalize ()}\label{classMesh_744570acd9077b5b6eaa3d156725f54c}
+
+
+Resize the mesh to a unit-length box. 
+
+Resize the mesh to a unit-length box : The biggest direction of the mesh (Ox or Oy or Oz) will be set to 1 after scaling, the other directions will be proportionally scaled.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!operator=@{operator=}}
+\index{operator=@{operator=}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Mesh}\& Mesh::operator= (const \bf{Mesh} \& {\em \_\-m})}\label{classMesh_b87c08b9a4c252fef2da69ef6ca76490}
+
+
+Affectation operator of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Affectation operator of the \doxyref{Mesh}{p.}{classMesh} class. \index{Mesh@{Mesh}!printInfos@{printInfos}}
+\index{printInfos@{printInfos}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::print\-Infos ()}\label{classMesh_da2aad83350a30a69fd05b531450d950}
+
+
+Print some informations about the mesh in the terminal. 
+
+Print some informations about the mesh in the terminal : Number of vertices, number of edges, number of faces.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setEdges@{setEdges}}
+\index{setEdges@{setEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-Edges (vector$<$ \bf{Edge} $\ast$ $>$ {\em \_\-edges})}\label{classMesh_c6930492adc3ad0ac6e56e3c8ebbef39}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-edges}]: array containing a pointer on each half edge of the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setFaces@{setFaces}}
+\index{setFaces@{setFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-Faces (vector$<$ \bf{Face} $\ast$ $>$ {\em \_\-faces})}\label{classMesh_8d2a624cc17abfe728956151b349fe28}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-faces}]: array containing a pointer on each face of the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setID@{setID}}
+\index{setID@{setID}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-ID (int {\em \_\-ID})}\label{classMesh_9da5f281bb370c73cb9d44003b845c88}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-ID}]: ID to affect to the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setNEdges@{setNEdges}}
+\index{setNEdges@{setNEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-NEdges (int {\em \_\-n\-Edges})}\label{classMesh_6836d0fdace535fa08f980c3b6d6395c}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-n\-Edges}]: numer of edges in the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setNFaces@{setNFaces}}
+\index{setNFaces@{setNFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-NFaces (int {\em \_\-n\-Faces})}\label{classMesh_12e7cfe907e83eff9b9a49b8dc163191}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-n\-Faces}]: number of faces in the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setNVerts@{setNVerts}}
+\index{setNVerts@{setNVerts}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-NVerts (int {\em \_\-n\-Verts})}\label{classMesh_7e0f384b04be81a31a961d65a33ce5f2}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-n\-Verts}]: number of vertices in the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!setVerts@{setVerts}}
+\index{setVerts@{setVerts}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::set\-Verts (vector$<$ \bf{Vertex} $\ast$ $>$ {\em \_\-verts})}\label{classMesh_9edcf0ab96f3884706658af03977376a}
+
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class. 
+
+Setter of the \doxyref{Mesh}{p.}{classMesh} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-verts}]: array containing a pointer on each vertex of the mesh.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Mesh@{Mesh}!edges@{edges}}
+\index{edges@{edges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Edge}$\ast$$>$ Mesh::edges\hspace{0.3cm}{\tt  [private]}}\label{classMesh_113c3f0e0fefe20ce39c9437d06b0ccf}
+
+
+$<$Vector (array) of pointer to all the vertices componong the mesh. \index{Mesh@{Mesh}!faces@{faces}}
+\index{faces@{faces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Face}$\ast$$>$ Mesh::faces\hspace{0.3cm}{\tt  [private]}}\label{classMesh_ec37be564d0d6598c829834d97559bff}
+
+
+$<$Vector (array) of pointer to all the half edges componong the mesh. \index{Mesh@{Mesh}!nEdges@{nEdges}}
+\index{nEdges@{nEdges}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::n\-Edges\hspace{0.3cm}{\tt  [private]}}\label{classMesh_f14f41e413b79b40a69f647ae7804a0a}
+
+
+$<$Number of vertex composing the mesh. \index{Mesh@{Mesh}!nFaces@{nFaces}}
+\index{nFaces@{nFaces}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::n\-Faces\hspace{0.3cm}{\tt  [private]}}\label{classMesh_4851517df941b17bd5d8df4ca1c5fb1c}
+
+
+$<$Number of half edges composing the mesh. \index{Mesh@{Mesh}!nVerts@{nVerts}}
+\index{nVerts@{nVerts}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::n\-Verts\hspace{0.3cm}{\tt  [private]}}\label{classMesh_bce7a7eec15883b5033991b21611932f}
+
+
+$<$ID of the mesh. \index{Mesh@{Mesh}!verts@{verts}}
+\index{verts@{verts}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Vertex}$\ast$$>$ Mesh::verts\hspace{0.3cm}{\tt  [private]}}\label{classMesh_0b3fbe3031859bbea5a09b1def6b9915}
+
+
+$<$Number of faces composing the mesh. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/GMTOOLS\_\-CPP/inc/\bf{mesh.h}\end{CompactItemize}
