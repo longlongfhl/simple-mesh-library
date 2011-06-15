@@ -30,6 +30,8 @@
 
 /*! \mainpage SML- Simple Mesh Library
  *
+ * https://code.google.com/p/simple-mesh-library/
+ *
  * \image html WorkInProgress.jpg "Image found at 'http://www.3dvf.com/forum/3dvf/WorkInProgress/3D/dragonball-style-alien-sujet_1120_1.htm'"
  *
  * \section Overview
