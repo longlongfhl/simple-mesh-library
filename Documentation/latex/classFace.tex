@@ -1,0 +1,227 @@
+\section{Face Class Reference}
+\label{classFace}\index{Face@{Face}}
+Classe repr\~{A}©sentant une face, soit, un polygone appartenant au mesh. Une face est representee par ses elements les plus courant, a savoir : un idfentifiant unique pour chaque face d'un meme maillage, un vecteur mormal a cette face.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Face} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+\bf{Face} (const \bf{Face} \&\_\-face)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+\bf{Face} (int \_\-ID)
+\begin{CompactList}\small\item\em Overloaded constructor of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+\bf{Face} (int \_\-ID, vector$<$ \bf{Edge} $\ast$ $>$ \_\-edges)
+\begin{CompactList}\small\item\em Overloaded constructor of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+\bf{$\sim$Face} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+\bf{Face} \& \bf{operator=} (const \bf{Face} \&\_\-face)
+\begin{CompactList}\small\item\em Affectation operator of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+int \bf{get\-ID} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{get\-Normal} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+double $\ast$ \bf{get\-Normal\-Array} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+vector$<$ \bf{Edge} $\ast$ $>$ \bf{get\-Edges} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+void \bf{set\-ID} (int \_\-ID)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+void \bf{set\-Normal} (\bf{Vector3D} \_\-normal)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+void \bf{set\-Edges} (vector$<$ \bf{Edge} $\ast$ $>$ \_\-edges)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
+void \bf{add\-Edge} (\bf{Edge} $\ast$\_\-e)
+\begin{CompactList}\small\item\em Adds an edge to the face. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int \textbf{id}\label{classFace_2f826e705fdf48c04903547d6cb19af7}
+
+\item 
+\bf{Vector3D} \bf{normal}
+\item 
+vector$<$ \bf{Edge} $\ast$ $>$ \bf{edges}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant une face, soit, un polygone appartenant au mesh. Une face est representee par ses elements les plus courant, a savoir : un idfentifiant unique pour chaque face d'un meme maillage, un vecteur mormal a cette face. 
+
+Le polygone d'une face s'obtient en parcourant dans l'ordre le tableau d'aretes de la face : une face dont le polygone est forme des points \{0, 1, 2\} aura le tableau d'aretes suivant : \{[0,1] [1,2] [2,0]\} avec [0,1] representant l'arete qui part du point 0 pour aller vers le point 1. Les informations de voisinnage s'obtiennent aussi en parcourant ce tableau (et eventuellement les tableaux de ces aretes). 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Face::Face ()}\label{classFace_d056823cd0e5d6a7be3e1a5debc763d5}
+
+
+Default constructor of the \doxyref{Face}{p.}{classFace} class. 
+
+Default constructor of the \doxyref{Face}{p.}{classFace} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Face::Face (const \bf{Face} \& {\em \_\-face})}\label{classFace_111e4a7b3c464b8f17162c1dd91cb29f}
+
+
+Copy constructor of the \doxyref{Face}{p.}{classFace} class. 
+
+Copy constructor of the \doxyref{Face}{p.}{classFace} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Face::Face (int {\em \_\-ID})}\label{classFace_a5922a2c3e1a909c64d5c97270a38dbc}
+
+
+Overloaded constructor of the \doxyref{Face}{p.}{classFace} class. 
+
+Overloaded constructor of the \doxyref{Face}{p.}{classFace} class : fill the id and of the edge. The rest is initialized to 0, NULL or cleared. \index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Face::Face (int {\em \_\-ID}, vector$<$ \bf{Edge} $\ast$ $>$ {\em \_\-edges})}\label{classFace_356a66d3fe74833b36998b048a81037c}
+
+
+Overloaded constructor of the \doxyref{Face}{p.}{classFace} class. 
+
+Overloaded constructor of the \doxyref{Face}{p.}{classFace} class : fill the id and the edges vector of the face. The normal will be set to 0; \index{Face@{Face}!~Face@{$\sim$Face}}
+\index{~Face@{$\sim$Face}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Face::$\sim$Face ()}\label{classFace_4b16db409230d76dd54a03a2e545201e}
+
+
+Destructor of the \doxyref{Face}{p.}{classFace} class. 
+
+Destructor of the \doxyref{Face}{p.}{classFace} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). 
+
+\subsection{Member Function Documentation}
+\index{Face@{Face}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face::add\-Edge (\bf{Edge} $\ast$ {\em \_\-e})}\label{classFace_91e244a303379f1f6cd9391ccc80d1bb}
+
+
+Adds an edge to the face. 
+
+Adds a given edge to the face.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-e}]: the edge to add to the face.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Face@{Face}!getEdges@{getEdges}}
+\index{getEdges@{getEdges}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Edge}$\ast$$>$ Face::get\-Edges ()}\label{classFace_b62a8485b5a02dfb53081b3631a46eae}
+
+
+Getter of the \doxyref{Face}{p.}{classFace} class. 
+
+Getter of the \doxyref{Face}{p.}{classFace} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$Edge$\ast$$>$) returns a vector of the edges composing the face. \end{Desc}
+\index{Face@{Face}!getID@{getID}}
+\index{getID@{getID}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Face::get\-ID ()}\label{classFace_b041aeb6f3353d4df8b0589e34d190bf}
+
+
+Getter of the \doxyref{Face}{p.}{classFace} class. 
+
+Getter of the \doxyref{Face}{p.}{classFace} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the ID of the face. \end{Desc}
+\index{Face@{Face}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Face::get\-Normal ()}\label{classFace_a504d424f6692e6d2230531a9e206cab}
+
+
+Getter of the \doxyref{Face}{p.}{classFace} class. 
+
+Getter of the \doxyref{Face}{p.}{classFace} class.
+
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) returns the normal to the face. \end{Desc}
+\index{Face@{Face}!getNormalArray@{getNormalArray}}
+\index{getNormalArray@{getNormalArray}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Face::get\-Normal\-Array ()}\label{classFace_c9e1350e70d899408e331fff2f111b77}
+
+
+Getter of the \doxyref{Face}{p.}{classFace} class. 
+
+Getter of the \doxyref{Face}{p.}{classFace} class, returns a doule array instead of a \doxyref{Vector3D}{p.}{classVector3D}.
+
+\begin{Desc}
+\item[Returns:](double$\ast$) returns the norma to the face. \end{Desc}
+\index{Face@{Face}!operator=@{operator=}}
+\index{operator=@{operator=}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Face}\& Face::operator= (const \bf{Face} \& {\em \_\-face})}\label{classFace_93003aafc976982521772fd0b42e2758}
+
+
+Affectation operator of the \doxyref{Face}{p.}{classFace} class. 
+
+Affectation operator of the \doxyref{Face}{p.}{classFace} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Face@{Face}!setEdges@{setEdges}}
+\index{setEdges@{setEdges}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face::set\-Edges (vector$<$ \bf{Edge} $\ast$ $>$ {\em \_\-edges})}\label{classFace_56ab61ca7f329a9b9d00cf868ed94823}
+
+
+Setter of the \doxyref{Face}{p.}{classFace} class. 
+
+Setter of the \doxyref{Face}{p.}{classFace} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-edges}]: vector of the edges we want to affect to the edges attribute of the face.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Face@{Face}!setID@{setID}}
+\index{setID@{setID}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face::set\-ID (int {\em \_\-ID})}\label{classFace_8823424c15707e05b26293ba308916f5}
+
+
+Setter of the \doxyref{Face}{p.}{classFace} class. 
+
+Setter of the \doxyref{Face}{p.}{classFace} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-ID}]: ID we want to affect to the face.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Face@{Face}!setNormal@{setNormal}}
+\index{setNormal@{setNormal}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face::set\-Normal (\bf{Vector3D} {\em \_\-normal})}\label{classFace_f54d35180728d09114aedc1c897ce25c}
+
+
+Setter of the \doxyref{Face}{p.}{classFace} class. 
+
+Setter of the \doxyref{Face}{p.}{classFace} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-normal}]: the normal we want to affect to the face.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Face@{Face}!edges@{edges}}
+\index{edges@{edges}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Edge}$\ast$$>$ Face::edges\hspace{0.3cm}{\tt  [private]}}\label{classFace_5fd759b80749c495c1a18e4771850e4f}
+
+
+$<$Normal vector to the face. \index{Face@{Face}!normal@{normal}}
+\index{normal@{normal}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Face::normal\hspace{0.3cm}{\tt  [private]}}\label{classFace_6fc941996976e9d63ff7f4aa8a7a6c40}
+
+
+$<$ID of the face. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/GMTOOLS\_\-CPP/inc/\bf{define.h}\end{CompactItemize}
