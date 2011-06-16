@@ -64,6 +64,8 @@ void \bf{set\-Z} (double \_\-z)
 \begin{CompactList}\small\item\em Setter of the \doxyref{Vector3D}{p.}{classVector3D} class. \item\end{CompactList}\item 
 void \bf{set} (double \_\-x, double \_\-y, double \_\-z)
 \begin{CompactList}\small\item\em Setter of the \doxyref{Vector3D}{p.}{classVector3D} class. \item\end{CompactList}\item 
+void \bf{clear} ()
+\begin{CompactList}\small\item\em Clears a 3D vector. \item\end{CompactList}\item 
 void \bf{normalize} ()
 \begin{CompactList}\small\item\em Normalize a 3D vector. \item\end{CompactList}\item 
 void \bf{print} ()
@@ -83,7 +85,11 @@ double \bf{z}
 \subsection{Detailed Description}
 Classe repr\~{A}©sentant un Vecteur en 3 dimensions. 
 
-Un vecteur en trois dimension est represente par un triplet de double. Une telle classe peut representer un point de l'espace, un vecteur mathematique de 3 dimensions, une couleur sous forme rgb ou tls... 
+Un vecteur en trois dimension est represente par un triplet de double. Une telle classe peut representer un point de l'espace, un vecteur mathematique de 3 dimensions, une couleur sous forme rgb ou tls...
+
+\begin{Desc}
+\item[\bf{Todo}]Rajouter un operateur[] pour acceder a x,y et z facilement : comme si le vector etait un tableau. Ca laisserait plus de flexibilite au code.\end{Desc}
+
 
 
 
@@ -119,6 +125,17 @@ Destructor of the \doxyref{Vector3D}{p.}{classVector3D} class.
 Destructor of the \doxyref{Vector3D}{p.}{classVector3D} class. 
 
 \subsection{Member Function Documentation}
+\index{Vector3D@{Vector3D}!clear@{clear}}
+\index{clear@{clear}!Vector3D@{Vector3D}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector3D::clear ()}\label{classVector3D_1f02860b5fc28b9f9eb8b668d17032ee}
+
+
+Clears a 3D vector. 
+
+Clears a 3D vector : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...).
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
 \index{Vector3D@{Vector3D}!getArray@{getArray}}
 \index{getArray@{getArray}!Vector3D@{Vector3D}}
 \subsubsection{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Vector3D::get\-Array ()}\label{classVector3D_37e685df8e791c0517fa18dee40d7376}

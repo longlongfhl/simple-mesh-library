@@ -231,6 +231,13 @@ void Vector3D::set(double _x, double _y, double _z)
 	z = _z;
 }
 
+void Vector3D::clear()
+{
+	x = 0;
+	y = 0;
+	z = 0;
+}
+
 void Vector3D::normalize()
 {
 	double norme = sqrt ( x*x + y*y + z*z );

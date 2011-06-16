@@ -3,11 +3,29 @@
 Definition d'otils geonetriques. 
 
 {\tt \#include \char`\"{}vector3d.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{RADIANS}~0\label{tools_8h_7e0e15e34343e41bdb00e4131f3c6a8b}
+
+\item 
+\#define \bf{DEGREES}~1
+\end{CompactItemize}
 \subsection*{Functions}
 \begin{CompactItemize}
 \item 
-Vector3D \bf{tools\_\-cross\-Product} (Vector3D \_\-u, Vector3D \_\-v)
-\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Computes the cross product of two 3D vectors. \item\end{CompactList}\end{CompactItemize}
+\bf{Vector3D} \bf{tools\_\-cross\-Product} (\bf{Vector3D} \_\-u, \bf{Vector3D} \_\-v)
+\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Computes the cross product of two 3D vectors. \item\end{CompactList}\item 
+void \bf{tools\_\-couleurpure} (\bf{Vector3D} tls, \bf{Vector3D} \&rgb)
+\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Part of a pipeline of functions to convert a TLS color to a RGB one. \item\end{CompactList}\item 
+void \bf{tools\_\-couleursaturee} (\bf{Vector3D} tls, \bf{Vector3D} \&rgb)
+\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Part of a pipeline of functions to convert a TLS color to a RGB one. \item\end{CompactList}\item 
+void \bf{tools\_\-couleurfinale} (\bf{Vector3D} tls, \bf{Vector3D} \&rgb)
+\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Part of a pipeline of functions to convert a TLS color to a RGB one. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{tools\_\-TLSto\-RGB} (\bf{Vector3D} \_\-color)
+\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Convert a TLS color to a RGB one. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{tools\_\-color\-From\-Value} (int \_\-mode, double \_\-value)
+\begin{CompactList}\small\item\em NON MEMBER FUNCTION : Creates a color from a value. \item\end{CompactList}\end{CompactItemize}
 
 
 \subsection{Detailed Description}
@@ -15,10 +33,88 @@ Definition d'otils geonetriques.
 
 Ce fichier ne contient que des fonctions non membres qu'il me semblait plus logique de construire comme tel qu'en tant que methode d'une classe specifique. 
 
+\subsection{Define Documentation}
+\index{tools.h@{tools.h}!DEGREES@{DEGREES}}
+\index{DEGREES@{DEGREES}!tools.h@{tools.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define DEGREES~1}\label{tools_8h_9aee3e100c833cec8b2594db8b1c1c55}
+
+
+mode : mode for computing a color from a value. 
+
 \subsection{Function Documentation}
+\index{tools.h@{tools.h}!tools_colorFromValue@{tools\_\-colorFromValue}}
+\index{tools_colorFromValue@{tools\_\-colorFromValue}!tools.h@{tools.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} tools\_\-color\-From\-Value (int {\em \_\-mode}, double {\em \_\-value})}\label{tools_8h_ace6ba42433774dd405b03d3c3619e63}
+
+
+NON MEMBER FUNCTION : Creates a color from a value. 
+
+Creates a color from a value : The value is the angle given by the future color on the TLS circle. (it represents the T value, while the L value is set to 0.5 and the S value is set to 1).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-mode}]: mode of coding the value. Should be RADIANS or DEGREES \item[{\em \_\-value}]: angle to convert in a color.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) Returns the color fathered by the value. \end{Desc}
+\index{tools.h@{tools.h}!tools_couleurfinale@{tools\_\-couleurfinale}}
+\index{tools_couleurfinale@{tools\_\-couleurfinale}!tools.h@{tools.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void tools\_\-couleurfinale (\bf{Vector3D} {\em tls}, \bf{Vector3D} \& {\em rgb})}\label{tools_8h_f9d95532093cb7b9465d10c531e5b2c0}
+
+
+NON MEMBER FUNCTION : Part of a pipeline of functions to convert a TLS color to a RGB one. 
+
+Part of a pipeline of functions to convert a TLS color to a RGB one. The other parts of the process are the tools\_\-couleursaturee and the tools\_\-couleurfinale. The whole process is given by the tools\_\-TLSto\-RGB or the tools\_\-color\-From\-Value functions.
+
+This function modify the rslt color by taking in account the S value of the TLS coded color.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-tls}]: a color coded in a TLS format and stored in a \doxyref{Vector3D}{p.}{classVector3D}. This is the color to convert into RGB format. \item[{\em \_\-rgb}]: this will contain the result of the operation.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{tools.h@{tools.h}!tools_couleurpure@{tools\_\-couleurpure}}
+\index{tools_couleurpure@{tools\_\-couleurpure}!tools.h@{tools.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void tools\_\-couleurpure (\bf{Vector3D} {\em tls}, \bf{Vector3D} \& {\em rgb})}\label{tools_8h_6dc77b78735c26f8816d4881bad3f060}
+
+
+NON MEMBER FUNCTION : Part of a pipeline of functions to convert a TLS color to a RGB one. 
+
+Part of a pipeline of functions to convert a TLS color to a RGB one. The other parts of the process are the tools\_\-couleursaturee and the tools\_\-couleurfinale. The whole process is given by the tools\_\-TLSto\-RGB or the tools\_\-color\-From\-Value functions.
+
+This function modify the rslt color by taking in account the T value of the TLS coded color..
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-tls}]: a color coded in a TLS format and stored in a \doxyref{Vector3D}{p.}{classVector3D}. This is the color to convert into RGB format. \item[{\em \_\-rgb}]: this will contain the result of the operation.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{tools.h@{tools.h}!tools_couleursaturee@{tools\_\-couleursaturee}}
+\index{tools_couleursaturee@{tools\_\-couleursaturee}!tools.h@{tools.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void tools\_\-couleursaturee (\bf{Vector3D} {\em tls}, \bf{Vector3D} \& {\em rgb})}\label{tools_8h_61d7a589c00f0e0e8f9628fe0bd9e8c8}
+
+
+NON MEMBER FUNCTION : Part of a pipeline of functions to convert a TLS color to a RGB one. 
+
+Part of a pipeline of functions to convert a TLS color to a RGB one. The other parts of the process are the tools\_\-couleursaturee and the tools\_\-couleurfinale. The whole process is given by the tools\_\-TLSto\-RGB or the tools\_\-color\-From\-Value functions.
+
+This function modify the rslt color by taking in account the L value of the TLS coded color.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-tls}]: a color coded in a TLS format and stored in a \doxyref{Vector3D}{p.}{classVector3D}. This is the color to convert into RGB format. \item[{\em \_\-rgb}]: this will contain the result of the operation.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
 \index{tools.h@{tools.h}!tools_crossProduct@{tools\_\-crossProduct}}
 \index{tools_crossProduct@{tools\_\-crossProduct}!tools.h@{tools.h}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector3D tools\_\-cross\-Product (Vector3D {\em \_\-u}, Vector3D {\em \_\-v})}\label{tools_8h_6ffa0d160584684031106523d7a13005}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} tools\_\-cross\-Product (\bf{Vector3D} {\em \_\-u}, \bf{Vector3D} {\em \_\-v})}\label{tools_8h_6ffa0d160584684031106523d7a13005}
 
 
 NON MEMBER FUNCTION : Computes the cross product of two 3D vectors. 
@@ -32,3 +128,19 @@ Computes the cross product of two 3D vectors.
 \end{Desc}
 \begin{Desc}
 \item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) Returns the result of the cross product of the two vectors given in parameter. \end{Desc}
+\index{tools.h@{tools.h}!tools_TLStoRGB@{tools\_\-TLStoRGB}}
+\index{tools_TLStoRGB@{tools\_\-TLStoRGB}!tools.h@{tools.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} tools\_\-TLSto\-RGB (\bf{Vector3D} {\em \_\-color})}\label{tools_8h_8cb6bfd2bb2ee88d441cf35b07c4acd3}
+
+
+NON MEMBER FUNCTION : Convert a TLS color to a RGB one. 
+
+Convert a TLS color to a RGB one.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-color}]: color coded in a \doxyref{Vector3D}{p.}{classVector3D} in a TLS format we want to convert into RGB format.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) Returns the converted in RGB color. \end{Desc}
