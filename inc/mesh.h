@@ -9,6 +9,7 @@
 /* ______________________________ My includes ____ */
 #include "define.h"
 #include "tools.h"
+#include "map.h"
 
 /* ____________________________ STD Librairies ___ */
 #include <vector>
@@ -27,41 +28,6 @@
         #include <GL/glut.h>
         #endif
 #endif
-
-/*! \mainpage SML- Simple Mesh Library
- *
- * https://code.google.com/p/simple-mesh-library/
- *
- * \image html WorkInProgress.jpg "Image found at 'http://www.3dvf.com/forum/3dvf/WorkInProgress/3D/dragonball-style-alien-sujet_1120_1.htm'"
- *
- * \section Overview
- *
- * The Simple Mesh Library is a free c++ library to manipulate meshes.
- * It uses a half edge representation of a mesh.
- * It is based on the GMTools library, which was written by Dimitri Kudelski using the C programation langage.
- *
- *
- * This deposit contains the source code, some examples applications with the corresponding source code and the documentation of the library.
- *
- * \warning YOU HAVE TO HAVE THE OPENGL AND THE GLUT LIBRARIES TO USE THIS LIBRARY OR LAUNCH A PRE-COMPILED APP.
- * \warning IF YOU DO NOT, PLEASE INSTALL IT OR COMMENT THE PART OF THE CODE THAT USES THEESE LIBRARIES - TYPICALLY THE DISPLAY METHODS -
- * \warning THEN RECOMPILE THE CODE AND USE IT ON YOUR OWN WAY.
- *
- * \section Architecture
- *
- * You will find two main directories in this library :
- * - The src directory.
- * - The inc directory.
- * - The bin directory.
- * - The examples directory.
- *
- * The first one contains all the source code files while the second one contains only the headers.
- * The third contains a set of simple executable software.
- * Finally the fourth one contains the source code of each executable in the bin directory. The code is documented in this section and tries to help beginers to familiarisate themselves with the library.
- * 
- *
- */
-
 
 /* ************************************************************************************ */
 /* ************************************************************************************ */
@@ -435,6 +401,17 @@ class Mesh
 		*  \return (void)
 		*/
 		void printInfos ();
+		
+		/*!
+		*  \brief Color each vertex of the mesh according to its map value.
+		*
+		*  Color each vertex of the mesh according to its map value :
+		*  Fills the color attribute of the vertex.
+		*  Its value is transformed in a color interpolated from red (max value of the map) and magenta (min value of the map).
+		*
+		*  \return (int) Returns 1 if the operation was done succesfully, -1 else.
+		*/
+		int colorFromMap ( Map _m );
 		
 		/*!
 		*  \brief OpenGL routine to display one of the vertices of a mesh.
