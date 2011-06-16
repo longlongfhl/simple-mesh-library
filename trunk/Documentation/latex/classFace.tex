@@ -33,7 +33,11 @@ void \bf{set\-Normal} (\bf{Vector3D} \_\-normal)
 void \bf{set\-Edges} (vector$<$ \bf{Edge} $\ast$ $>$ \_\-edges)
 \begin{CompactList}\small\item\em Setter of the \doxyref{Face}{p.}{classFace} class. \item\end{CompactList}\item 
 void \bf{add\-Edge} (\bf{Edge} $\ast$\_\-e)
-\begin{CompactList}\small\item\em Adds an edge to the face. \item\end{CompactList}\end{CompactItemize}
+\begin{CompactList}\small\item\em Adds an edge to the face. \item\end{CompactList}\item 
+void \bf{display} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Display the face. \item\end{CompactList}\item 
+void \bf{display} ()
+\begin{CompactList}\small\item\em Display the face. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
@@ -105,6 +109,33 @@ Adds a given edge to the face.
 \item[Parameters:]
 \begin{description}
 \item[{\em \_\-e}]: the edge to add to the face.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Face@{Face}!display@{display}}
+\index{display@{display}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face::display ()}\label{classFace_a3bb4436c7bf7395aff6f1727dd8a95a}
+
+
+Display the face. 
+
+Display the face.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Face@{Face}!display@{display}}
+\index{display@{display}!Face@{Face}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Face::display (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classFace_ba98268b71be82f8fa617fb62c788e2e}
+
+
+Display the face. 
+
+Display the face.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: Red component of the color to display. \item[{\em \_\-g}]: Green component of the color to display. \item[{\em \_\-b}]: Blue component of the color to display.\end{description}
 \end{Desc}
 \begin{Desc}
 \item[Returns:](void) \end{Desc}

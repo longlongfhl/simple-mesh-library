@@ -499,3 +499,31 @@ void Face::addEdge(Edge *_e)
 {
 	edges.push_back( _e );
 }
+
+void Face::display(float _r, float _g, float _b )
+{
+	glColor3f ( _r, _g, _b );
+	glBegin ( GL_POLYGON );
+	
+	for ( int i = 0 ; i < (int)edges.size() ; i++ )
+	{
+		glNormal3dv ( edges[i]->getHead()->getNormalArray() );
+		glVertex3dv ( edges[i]->getHead()->getPosArray() );
+	}
+	
+	glEnd();
+}
+
+void Face::display()
+{
+	glBegin ( GL_POLYGON );
+	
+	for ( int i = 0 ; i < (int)edges.size() ; i++ )
+	{
+		glColor3dv ( edges[i]->getHead()->getColorArray() );
+		glNormal3dv ( edges[i]->getHead()->getNormalArray() );
+		glVertex3dv ( edges[i]->getHead()->getPosArray() );
+	}
+	
+	glEnd();
+}

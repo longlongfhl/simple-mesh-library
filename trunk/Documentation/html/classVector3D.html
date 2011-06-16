@@ -110,6 +110,9 @@
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector3D.html#65565750c6439bc72841a4f983742e73">set</a> (double _x, double _y, double _z)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setter of the <a class="el" href="classVector3D.html">Vector3D</a> class.  <a href="#65565750c6439bc72841a4f983742e73"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector3D.html#1f02860b5fc28b9f9eb8b668d17032ee">clear</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clears a 3D vector.  <a href="#1f02860b5fc28b9f9eb8b668d17032ee"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector3D.html#569e5f005c578ae1ea01828cfdbe4c07">normalize</a> ()</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Normalize a 3D vector.  <a href="#569e5f005c578ae1ea01828cfdbe4c07"></a><br></td></tr>
@@ -128,7 +131,9 @@ double&nbsp;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Classe représentant un Vecteur en 3 dimensions. 
 <p>
-Un vecteur en trois dimension est represente par un triplet de double. Une telle classe peut representer un point de l'espace, un vecteur mathematique de 3 dimensions, une couleur sous forme rgb ou tls... 
+Un vecteur en trois dimension est represente par un triplet de double. Une telle classe peut representer un point de l'espace, un vecteur mathematique de 3 dimensions, une couleur sous forme rgb ou tls...<p>
+<dl compact><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Rajouter un operateur[] pour acceder a x,y et z facilement : comme si le vector etait un tableau. Ca laisserait plus de flexibilite au code.</dd></dl>
+
 <p>
 <hr><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" name="bf0cbe79807e0cc1d0d5177645faa0fd"></a><!-- doxytag: member="Vector3D::Vector3D" ref="bf0cbe79807e0cc1d0d5177645faa0fd" args="()" -->
@@ -233,6 +238,29 @@ Destructor of the <a class="el" href="classVector3D.html">Vector3D</a> class.
 </div>
 </div><p>
 <hr><h2>Member Function Documentation</h2>
+<a class="anchor" name="1f02860b5fc28b9f9eb8b668d17032ee"></a><!-- doxytag: member="Vector3D::clear" ref="1f02860b5fc28b9f9eb8b668d17032ee" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vector3D::clear           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Clears a 3D vector. 
+<p>
+Clears a 3D vector : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...).<p>
+<dl compact><dt><b>Returns:</b></dt><dd>(void) </dd></dl>
+
+</div>
+</div><p>
 <a class="anchor" name="37e685df8e791c0517fa18dee40d7376"></a><!-- doxytag: member="Vector3D::getArray" ref="37e685df8e791c0517fa18dee40d7376" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -911,7 +939,7 @@ Setter of the <a class="el" href="classVector3D.html">Vector3D</a> class.<p>
 </div><p>
 <hr>The documentation for this class was generated from the following file:<ul>
 <li>/home/joris/Projets/Internship/Code/GMTOOLS_CPP/simple-mesh-library/inc/<a class="el" href="vector3d_8h-source.html">vector3d.h</a></ul>
-<hr size="1"><address style="align: right;"><small>Generated on Wed Jun 15 16:40:16 2011 for SML - Simple Mesh Library by&nbsp;
+<hr size="1"><address style="align: right;"><small>Generated on Thu Jun 16 17:10:52 2011 for SML - Simple Mesh Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
 </body>

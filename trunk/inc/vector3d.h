@@ -257,6 +257,15 @@ public:
 	void set	( double _x, double _y, double _z );
 	
 	/*!
+	*  \brief Clears a 3D vector.
+	*
+	*  Clears a 3D vector : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...).
+	*
+	*  \return (void)
+	*/
+	void clear ();
+	
+	/*!
 	*  \brief Normalize a 3D vector.
 	*
 	*  Normalize a 3D vector.

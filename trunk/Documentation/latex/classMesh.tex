@@ -68,6 +68,8 @@ void \bf{normalize} ()
 \begin{CompactList}\small\item\em Resize the mesh to a unit-length box. \item\end{CompactList}\item 
 void \bf{print\-Infos} ()
 \begin{CompactList}\small\item\em Print some informations about the mesh in the terminal. \item\end{CompactList}\item 
+int \bf{color\-From\-Map} (\bf{Map} \_\-m)
+\begin{CompactList}\small\item\em Color each vertex of the mesh according to its map value. \item\end{CompactList}\item 
 void \bf{display\-IVertex} (int \_\-i, float \_\-r, float \_\-g, float \_\-b)
 \begin{CompactList}\small\item\em Open\-GL routine to display one of the vertices of a mesh. \item\end{CompactList}\item 
 void \bf{display\-IVertex} (int \_\-i)
@@ -102,7 +104,7 @@ void \bf{display\-Faces\-Smooth} ()
 \begin{CompactList}\small\item\em Open\-GL routine to display the faces of a mesh. \item\end{CompactList}\item 
 void \bf{display} (int \_\-mode, float \_\-r, float \_\-g, float \_\-b)
 \begin{CompactList}\small\item\em Open\-GL routine to display a mesh. \item\end{CompactList}\item 
-void \bf{display} (int \_\-mode)
+void \bf{display} (int \_\-mode=FACES)
 \begin{CompactList}\small\item\em Open\-GL routine to display a mesh. \item\end{CompactList}\end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
@@ -251,6 +253,17 @@ All attributes will be set to 0 (int, float, double, ...), NULL (pointers) or cl
 
 \begin{Desc}
 \item[Returns:](void) \end{Desc}
+\index{Mesh@{Mesh}!colorFromMap@{colorFromMap}}
+\index{colorFromMap@{colorFromMap}!Mesh@{Mesh}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Mesh::color\-From\-Map (\bf{Map} {\em \_\-m})}\label{classMesh_a5acd273de196437e36cbde075573779}
+
+
+Color each vertex of the mesh according to its map value. 
+
+Color each vertex of the mesh according to its map value : Fills the color attribute of the vertex. Its value is transformed in a color interpolated from red (max value of the map) and magenta (min value of the map).
+
+\begin{Desc}
+\item[Returns:](int) Returns 1 if the operation was done succesfully, -1 else. \end{Desc}
 \index{Mesh@{Mesh}!computeNormals@{computeNormals}}
 \index{computeNormals@{computeNormals}!Mesh@{Mesh}}
 \subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::compute\-Normals ()}\label{classMesh_f43f690d961ef42f2ff0f0594acc9521}
@@ -280,7 +293,7 @@ Search an edge defined by its two vertices in the edges vector of the mesh.
 \item[Returns:](int) Returns the index of the edge if the half edge with these two vertices as tail and head is found, -1 else. \end{Desc}
 \index{Mesh@{Mesh}!display@{display}}
 \index{display@{display}!Mesh@{Mesh}}
-\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display (int {\em \_\-mode})}\label{classMesh_0d675b3d5bc1fe62f9ff040e49503da6}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Mesh::display (int {\em \_\-mode} = {\tt FACES})}\label{classMesh_d19fece19899f14e837df4ff52b5bd79}
 
 
 Open\-GL routine to display a mesh. 

@@ -635,7 +635,7 @@ class Mesh
 		*
 		*  \return (void)
 		*/
-		void display ( int _mode );
+		void display ( int _mode=FACES );
 };
 
 #endif

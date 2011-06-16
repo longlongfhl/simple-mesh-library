@@ -116,6 +116,9 @@
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#da2aad83350a30a69fd05b531450d950">printInfos</a> ()</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Print some informations about the mesh in the terminal.  <a href="#da2aad83350a30a69fd05b531450d950"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#a5acd273de196437e36cbde075573779">colorFromMap</a> (<a class="el" href="classMap.html">Map</a> _m)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Color each vertex of the mesh according to its map value.  <a href="#a5acd273de196437e36cbde075573779"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#5ffd7e65f37b29e1f1f30a96aa64c762">displayIVertex</a> (int _i, float _r, float _g, float _b)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OpenGL routine to display one of the vertices of a mesh.  <a href="#5ffd7e65f37b29e1f1f30a96aa64c762"></a><br></td></tr>
@@ -167,9 +170,9 @@
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#33a25f454b45544c9140a337e50396d7">display</a> (int _mode, float _r, float _g, float _b)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OpenGL routine to display a mesh.  <a href="#33a25f454b45544c9140a337e50396d7"></a><br></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#0d675b3d5bc1fe62f9ff040e49503da6">display</a> (int _mode)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMesh.html#d19fece19899f14e837df4ff52b5bd79">display</a> (int _mode=FACES)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OpenGL routine to display a mesh.  <a href="#0d675b3d5bc1fe62f9ff040e49503da6"></a><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OpenGL routine to display a mesh.  <a href="#d19fece19899f14e837df4ff52b5bd79"></a><br></td></tr>
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9c58374fc69e64bd115e7f68d1e0fb77"></a><!-- doxytag: member="Mesh::id" ref="9c58374fc69e64bd115e7f68d1e0fb77" args="" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
@@ -448,6 +451,30 @@ All attributes will be set to 0 (int, float, double, ...), NULL (pointers) or cl
 
 </div>
 </div><p>
+<a class="anchor" name="a5acd273de196437e36cbde075573779"></a><!-- doxytag: member="Mesh::colorFromMap" ref="a5acd273de196437e36cbde075573779" args="(Map _m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Mesh::colorFromMap           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMap.html">Map</a>&nbsp;</td>
+          <td class="paramname"> <em>_m</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Color each vertex of the mesh according to its map value. 
+<p>
+Color each vertex of the mesh according to its map value : Fills the color attribute of the vertex. Its value is transformed in a color interpolated from red (max value of the map) and magenta (min value of the map).<p>
+<dl compact><dt><b>Returns:</b></dt><dd>(int) Returns 1 if the operation was done succesfully, -1 else. </dd></dl>
+
+</div>
+</div><p>
 <a class="anchor" name="f43f690d961ef42f2ff0f0594acc9521"></a><!-- doxytag: member="Mesh::computeNormals" ref="f43f690d961ef42f2ff0f0594acc9521" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -510,7 +537,7 @@ Search an edge defined by its two vertices in the edges vector of the mesh.<p>
 
 </div>
 </div><p>
-<a class="anchor" name="0d675b3d5bc1fe62f9ff040e49503da6"></a><!-- doxytag: member="Mesh::display" ref="0d675b3d5bc1fe62f9ff040e49503da6" args="(int _mode)" -->
+<a class="anchor" name="d19fece19899f14e837df4ff52b5bd79"></a><!-- doxytag: member="Mesh::display" ref="d19fece19899f14e837df4ff52b5bd79" args="(int _mode=FACES)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -518,7 +545,7 @@ Search an edge defined by its two vertices in the edges vector of the mesh.<p>
           <td class="memname">void Mesh::display           </td>
           <td>(</td>
           <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>_mode</em>          </td>
+          <td class="paramname"> <em>_mode</em> = <code>FACES</code>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td width="100%"></td>
         </tr>
@@ -1789,7 +1816,7 @@ Setter of the <a class="el" href="classMesh.html">Mesh</a> class.<p>
 </div><p>
 <hr>The documentation for this class was generated from the following file:<ul>
 <li>/home/joris/Projets/Internship/Code/GMTOOLS_CPP/simple-mesh-library/inc/<a class="el" href="mesh_8h-source.html">mesh.h</a></ul>
-<hr size="1"><address style="align: right;"><small>Generated on Wed Jun 15 16:40:16 2011 for SML - Simple Mesh Library by&nbsp;
+<hr size="1"><address style="align: right;"><small>Generated on Thu Jun 16 17:10:52 2011 for SML - Simple Mesh Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
 </body>

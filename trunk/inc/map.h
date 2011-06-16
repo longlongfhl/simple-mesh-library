@@ -163,7 +163,7 @@ class Map
 		*
 		*  \return (void)
 		*/
-		void expand ( int _min, int _max );
+		void expand ( int _min = -50, int _max = 50 );
 		
 		/*!
 		*  \brief Loads a map from a file and expand it.
@@ -207,7 +207,7 @@ class Map
 		*
 		*  \return (void)
 		*/
-		void segment ( int _n );
+		void segment ( int _n = 10 );
 		
 		/*!
 		*  \brief Prints some informations about the map in the terminal.

@@ -29,6 +29,8 @@ Map& Map::operator = ( const Map& _m )
 	max = _m.max;
 	data.clear();
 	data = _m.data;
+	
+	return *this;
 }
 
 double Map::getMin()
@@ -83,7 +85,7 @@ void Map::clear()
 	data.clear();
 }
 
-void Map::expand(int _min = -50, int _max = 50)
+void Map::expand(int _min, int _max)
 {
 	if ( _max < _min )
 	{
@@ -167,7 +169,7 @@ int Map::save(char *_path)
 	return 1;
 }
 
-void Map::segment(int _n = 10)
+void Map::segment(int _n)
 {	
 	/* Formula to get the class of the vertex. */
 	for ( int i = 0 ; i < (int)data.size() ; i++ )

@@ -13,6 +13,21 @@
 #include <iostream>
 #include <vector>
 
+/* ___________________ GLUT & OpenGL Librairies __ */
+#ifdef __APPLE__
+        #include <OpenGL/gl.h>
+        #include <OpenGL/glu.h>
+        #include <GLUT/glut.h>
+#else
+        #ifdef _WIN32
+        #include "../glut.h"
+        #else
+        #include <GL/gl.h>
+        #include <GL/glu.h>
+        #include <GL/glut.h>
+        #endif
+#endif
+
 using namespace std;
 
 /* Prototypes of all the class that will be declared in this file :
@@ -638,6 +653,28 @@ class Face
 		*  \return (void)
 		*/
 		void addEdge ( Edge* _e );
+		
+		/*!
+		*  \brief Display the face.
+		*
+		*  Display the face.
+		*
+		*  \param _r : Red component of the color to display.
+		*  \param _g : Green component of the color to display.
+		*  \param _b : Blue component of the color to display.
+		*
+		*  \return (void)
+		*/
+		void display ( float _r, float _g, float _b );
+		
+		/*!
+		*  \brief Display the face.
+		*
+		*  Display the face.
+		*
+		*  \return (void)
+		*/
+		void display ();
 };
 
 #endif

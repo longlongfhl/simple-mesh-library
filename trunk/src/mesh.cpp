@@ -700,7 +700,7 @@ void Mesh::display(int _mode, float _r, float _g, float _b)
 	}
 }
 
-void Mesh::display(int _mode)
+void Mesh::display(int _mode )
 {
 	switch ( _mode )
 	{
