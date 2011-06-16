@@ -15,6 +15,8 @@ class Vector3D
 	 * Un vecteur en trois dimension est represente par un triplet de double.
 	 * Une telle classe peut representer un point de l'espace, un vecteur mathematique de 3 dimensions, une couleur sous forme rgb ou tls...
 	 *
+	 *  \todo Rajouter un operateur[] pour acceder a x,y et z facilement : comme si le vector etait un tableau. Ca laisserait plus de flexibilite au code.
+	 *
 	 */
 	
 private :

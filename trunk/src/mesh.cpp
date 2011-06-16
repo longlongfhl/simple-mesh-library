@@ -1,4 +1,5 @@
 #include "../inc/mesh.h"
+#include <math.h>
 #include <limits>
 #include <fstream>
 #include <sstream>
@@ -209,7 +210,7 @@ int Mesh::loadOBJ(char *_path)
 	if ( ! file.is_open() )
 	{
 		cout<<"Error while opening the file \""<<_path<<"\""<<endl;
-		cout<<"Method is returning -1, check it if you didn't"<<endl;
+		cout<<"Method Mesh::loadOBJ is returning -1, check it if you didn't"<<endl;
 		return -1;
 	}
 	
@@ -363,6 +364,8 @@ int Mesh::loadOBJ(char *_path)
 		}
 	}
 	
+	file.close();
+	
 	return 1;
 }
 
@@ -459,6 +462,30 @@ void Mesh::normalize()
 	{
 		verts[i]->setPos( verts[i]->getPos() /= scaleCoeff );
 	}
+}
+
+int Mesh::colorFromMap(Map _m)
+{
+	if ( _m.getSize() != nVerts )
+	{
+		cout<<"Mesh and map don't have te same number of elements : Nelts in map = "<<_m.getSize()<<" and Nelts in mesh "<<nVerts<<endl;
+		cout<<"Matching aborted. Method Mesh::colorFromMap returning -1."<<endl;
+		return -1;
+	}
+	
+	/* The map has values between min and max, we want to attribute each value another one between -(7*pi/4) and 0.
+	   a & b will contain the coefficient of the linear interpolation from [min, max] to [-(7*pi/4), 0].
+	 */
+	double a = -( (7*M_PI_4) / ( _m.getMax() - _m.getMin() ));
+	double b = -( a * _m.getMax() );
+	
+	/* Setting the color for each vertex of the mesh according to the map. */
+	for ( int i = 0 ; i < nVerts ; i++ )
+	{
+		verts[i]->setColor( tools_colorFromValue( RADIANS, _m.getIData(i) * a + b ) );
+	}
+	
+	return 1;
 }
 
 void Mesh::printInfos()
