@@ -18,8 +18,8 @@
 TrackBall::TrackBall()
 {
 	state = false;
-	angleX = 0;
 	angleY = 0;
+	angleZ = 0;
 	mouseX = 0;
 	mouseY = 0;
 }
@@ -27,8 +27,8 @@ TrackBall::TrackBall()
 TrackBall::TrackBall(const TrackBall &_t)
 {
 	state = _t.state;
-	angleX = _t.angleX;
 	angleY = _t.angleY;
+	angleZ = _t.angleZ;
 	mouseX = _t.mouseX;
 	mouseY = _t.mouseY;
 }
@@ -41,8 +41,8 @@ TrackBall::~TrackBall()
 TrackBall& TrackBall::operator = ( const TrackBall& _t )
 {
 	state = _t.state;
-	angleX = _t.angleX;
 	angleY = _t.angleY;
+	angleZ = _t.angleZ;
 	mouseX = _t.mouseX;
 	mouseY = _t.mouseY;
 	
@@ -78,14 +78,14 @@ void TrackBall::setState(bool _s)
 	state = _s;
 }
 
-void TrackBall::setAngleX(double _x)
-{
-	angleX = _x;
-}
-
-void TrackBall::setAngleZ(double _y)
+void TrackBall::setAngleY(double _y)
 {
 	angleY = _y;
+}
+
+void TrackBall::setAngleZ(double _z)
+{
+	angleZ = _z;
 }
 
 void TrackBall::setMouseX(int _x)
@@ -97,19 +97,19 @@ void TrackBall::setMouseY(int _y)
 	mouseY = _y;
 }
 
-void TrackBall::displayBegin()
+void TrackBall::displayBeginGL_GLUT()
 {
 	glPushMatrix();
-	glRotatef( -angleX,0,1,0);
+	glRotatef( -angleY,0,1,0);
 	glRotatef( -angleZ, 0,0,1);
 }
 
-void TrackBall::displayEnd()
+void TrackBall::displayEndGL_GLUT()
 {
 	glPopMatrix();
 }
 
-void TrackBall::mouseGLUT(int _attachedButton, int _mouseButton, int _state, int _x, int _y)
+void TrackBall::mouseGL_GLUT(int _attachedButton, int _mouseButton, int _state, int _x, int _y)
 {
 	if ( _mouseButton == _attachedButton )
 	{
@@ -125,11 +125,11 @@ void TrackBall::mouseGLUT(int _attachedButton, int _mouseButton, int _state, int
 	}
 }
 
-void TrackBall::motionGLUT(int _x, int _y)
+void TrackBall::motionGL_GLUT(int _x, int _y)
 {
 	if ( state )
 	{
-		angleX += _y - mouseY;
+		angleY += _y - mouseY;
 		angleZ += _x - mouseX;
 		mouseX = _x;
 		mouseY = _y;
