@@ -1,0 +1,584 @@
+\begin{theindex}
+
+  \item {/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/define.h}, 
+		69
+  \item {/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/map.h}, 
+		70
+  \item {/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/mesh.h}, 
+		71
+  \item {/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/tools.h}, 
+		73
+  \item {/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/trackball.h}, 
+		77
+  \item {/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/vector3d.h}, 
+		78
+  \item {$\sim$Edge}
+    \subitem {Edge}, 11
+  \item {$\sim$Face}
+    \subitem {Face}, 18
+  \item {$\sim$Map}
+    \subitem {Map}, 22
+  \item {$\sim$Mesh}
+    \subitem {Mesh}, 31
+  \item {$\sim$TrackBall}
+    \subitem {Track\-Ball}, 47
+  \item {$\sim$Vector3D}
+    \subitem {Vector3D}, 54
+  \item {$\sim$Vertex}
+    \subitem {Vertex}, 62
+
+  \indexspace
+
+  \item {addEdge}
+    \subitem {Face}, 18
+    \subitem {Mesh}, 32
+    \subitem {Vertex}, 62
+  \item {addEdgeToIVertex}
+    \subitem {Mesh}, 32
+  \item {addFace}
+    \subitem {Edge}, 11
+    \subitem {Mesh}, 32
+  \item {addFaceToIEdge}
+    \subitem {Mesh}, 32
+  \item {addVertex}
+    \subitem {Mesh}, 33
+  \item {angleY}
+    \subitem {Track\-Ball}, 51
+  \item {angleZ}
+    \subitem {Track\-Ball}, 51
+
+  \indexspace
+
+  \item {clear}
+    \subitem {Map}, 23
+    \subitem {Mesh}, 33
+    \subitem {Vector3D}, 55
+  \item {color}
+    \subitem {Vertex}, 68
+  \item {colorFromMap}
+    \subitem {Mesh}, 33
+  \item {computeNormals}
+    \subitem {Mesh}, 33
+  \item {containsEdge}
+    \subitem {Mesh}, 34
+    \subitem {Vertex}, 62
+
+  \indexspace
+
+  \item {data}
+    \subitem {Map}, 27
+  \item {DEGREES}
+    \subitem {tools.h}, 73
+  \item {display}
+    \subitem {Face}, 18
+    \subitem {Mesh}, 34
+  \item {displayBeginGL\_\-GLUT}
+    \subitem {Track\-Ball}, 47
+  \item {displayEdges}
+    \subitem {Mesh}, 34, 35
+  \item {displayEndGL\_\-GLUT}
+    \subitem {Track\-Ball}, 47
+  \item {displayFaces}
+    \subitem {Mesh}, 35
+  \item {displayFacesSmooth}
+    \subitem {Mesh}, 35, 36
+  \item {displayIEdge}
+    \subitem {Mesh}, 36
+  \item {displayIFace}
+    \subitem {Mesh}, 36, 37
+  \item {displayIFaceSmooth}
+    \subitem {Mesh}, 37
+  \item {displayIVertex}
+    \subitem {Mesh}, 38
+  \item {displayVertices}
+    \subitem {Mesh}, 38
+
+  \indexspace
+
+  \item {Edge}, 9
+    \subitem {$\sim$Edge}, 11
+    \subitem {addFace}, 11
+    \subitem {Edge}, 11
+    \subitem {faces}, 14
+    \subitem {getFaces}, 11
+    \subitem {getHead}, 12
+    \subitem {getID}, 12
+    \subitem {getIFace}, 12
+    \subitem {getTail}, 12
+    \subitem {getTwin}, 12
+    \subitem {head}, 14
+    \subitem {setFaces}, 13
+    \subitem {setHead}, 13
+    \subitem {setID}, 13
+    \subitem {setTail}, 13
+    \subitem {setTwin}, 14
+    \subitem {tail}, 14
+    \subitem {toVector}, 14
+    \subitem {twin}, 14
+  \item {EDGES}
+    \subitem {mesh.h}, 71
+  \item {edges}
+    \subitem {Face}, 20
+    \subitem {Mesh}, 44
+    \subitem {Vertex}, 68
+  \item {expand}
+    \subitem {Map}, 23
+
+  \indexspace
+
+  \item {Face}, 16
+    \subitem {$\sim$Face}, 18
+    \subitem {addEdge}, 18
+    \subitem {display}, 18
+    \subitem {edges}, 20
+    \subitem {Face}, 17
+    \subitem {getEdges}, 18
+    \subitem {getID}, 19
+    \subitem {getNormal}, 19
+    \subitem {getNormalArray}, 19
+    \subitem {normal}, 20
+    \subitem {operator=}, 19
+    \subitem {setEdges}, 19
+    \subitem {setID}, 20
+    \subitem {setNormal}, 20
+  \item {FACES}
+    \subitem {mesh.h}, 71
+  \item {faces}
+    \subitem {Edge}, 14
+    \subitem {Mesh}, 44
+
+  \indexspace
+
+  \item {getAngleY}
+    \subitem {Track\-Ball}, 48
+  \item {getAngleZ}
+    \subitem {Track\-Ball}, 48
+  \item {getArray}
+    \subitem {Vector3D}, 55
+  \item {getColor}
+    \subitem {Vertex}, 63
+  \item {getColorArray}
+    \subitem {Vertex}, 63
+  \item {getData}
+    \subitem {Map}, 23
+  \item {getEdges}
+    \subitem {Face}, 18
+    \subitem {Mesh}, 39
+    \subitem {Vertex}, 63
+  \item {getFaces}
+    \subitem {Edge}, 11
+    \subitem {Mesh}, 39
+  \item {getHead}
+    \subitem {Edge}, 12
+  \item {getID}
+    \subitem {Edge}, 12
+    \subitem {Face}, 19
+    \subitem {Mesh}, 39
+    \subitem {Vertex}, 63
+  \item {getIData}
+    \subitem {Map}, 23
+  \item {getIEdge}
+    \subitem {Mesh}, 39
+    \subitem {Vertex}, 64
+  \item {getIFace}
+    \subitem {Edge}, 12
+  \item {getIVert}
+    \subitem {Mesh}, 40
+  \item {getMax}
+    \subitem {Map}, 23
+  \item {getMin}
+    \subitem {Map}, 24
+  \item {getMouseX}
+    \subitem {Track\-Ball}, 48
+  \item {getMouseY}
+    \subitem {Track\-Ball}, 48
+  \item {getNEdges}
+    \subitem {Mesh}, 40
+  \item {getNFaces}
+    \subitem {Mesh}, 40
+  \item {getNormal}
+    \subitem {Face}, 19
+    \subitem {Vertex}, 64
+  \item {getNormalArray}
+    \subitem {Face}, 19
+    \subitem {Vertex}, 64
+  \item {getNVerts}
+    \subitem {Mesh}, 40
+  \item {getPos}
+    \subitem {Vertex}, 64
+  \item {getPosArray}
+    \subitem {Vertex}, 64
+  \item {getSize}
+    \subitem {Map}, 24
+  \item {getState}
+    \subitem {Track\-Ball}, 49
+  \item {getTail}
+    \subitem {Edge}, 12
+  \item {getTwin}
+    \subitem {Edge}, 12
+  \item {getVerts}
+    \subitem {Mesh}, 40
+  \item {getX}
+    \subitem {Vector3D}, 55
+  \item {getY}
+    \subitem {Vector3D}, 55
+  \item {getZ}
+    \subitem {Vector3D}, 55
+
+  \indexspace
+
+  \item {head}
+    \subitem {Edge}, 14
+
+  \indexspace
+
+  \item {load}
+    \subitem {Map}, 24
+  \item {loadOBJ}
+    \subitem {Mesh}, 41
+
+  \indexspace
+
+  \item {Map}, 21
+    \subitem {$\sim$Map}, 22
+    \subitem {clear}, 23
+    \subitem {data}, 27
+    \subitem {expand}, 23
+    \subitem {getData}, 23
+    \subitem {getIData}, 23
+    \subitem {getMax}, 23
+    \subitem {getMin}, 24
+    \subitem {getSize}, 24
+    \subitem {load}, 24
+    \subitem {Map}, 22
+    \subitem {max}, 27
+    \subitem {operator=}, 24
+    \subitem {printData}, 24
+    \subitem {printIData}, 25
+    \subitem {printInfos}, 25
+    \subitem {save}, 25
+    \subitem {segment}, 25
+    \subitem {setData}, 26
+    \subitem {setIData}, 26
+    \subitem {setMax}, 26
+    \subitem {setMin}, 27
+  \item {max}
+    \subitem {Map}, 27
+  \item {Mesh}, 28
+    \subitem {$\sim$Mesh}, 31
+    \subitem {addEdge}, 32
+    \subitem {addEdgeToIVertex}, 32
+    \subitem {addFace}, 32
+    \subitem {addFaceToIEdge}, 32
+    \subitem {addVertex}, 33
+    \subitem {clear}, 33
+    \subitem {colorFromMap}, 33
+    \subitem {computeNormals}, 33
+    \subitem {containsEdge}, 34
+    \subitem {display}, 34
+    \subitem {displayEdges}, 34, 35
+    \subitem {displayFaces}, 35
+    \subitem {displayFacesSmooth}, 35, 36
+    \subitem {displayIEdge}, 36
+    \subitem {displayIFace}, 36, 37
+    \subitem {displayIFaceSmooth}, 37
+    \subitem {displayIVertex}, 38
+    \subitem {displayVertices}, 38
+    \subitem {edges}, 44
+    \subitem {faces}, 44
+    \subitem {getEdges}, 39
+    \subitem {getFaces}, 39
+    \subitem {getID}, 39
+    \subitem {getIEdge}, 39
+    \subitem {getIVert}, 40
+    \subitem {getNEdges}, 40
+    \subitem {getNFaces}, 40
+    \subitem {getNVerts}, 40
+    \subitem {getVerts}, 40
+    \subitem {loadOBJ}, 41
+    \subitem {Mesh}, 31
+    \subitem {nEdges}, 44
+    \subitem {nFaces}, 44
+    \subitem {normalize}, 41
+    \subitem {nVerts}, 44
+    \subitem {operator=}, 41
+    \subitem {printInfos}, 41
+    \subitem {setEdges}, 42
+    \subitem {setFaces}, 42
+    \subitem {setID}, 42
+    \subitem {setNEdges}, 42
+    \subitem {setNFaces}, 43
+    \subitem {setNVerts}, 43
+    \subitem {setVerts}, 43
+    \subitem {verts}, 44
+  \item {mesh.h}
+    \subitem {EDGES}, 71
+    \subitem {FACES}, 71
+    \subitem {SMOOTH}, 71
+    \subitem {VERTICES}, 71
+  \item {motionGL\_\-GLUT}
+    \subitem {Track\-Ball}, 49
+  \item {mouseGL\_\-GLUT}
+    \subitem {Track\-Ball}, 49
+  \item {mouseX}
+    \subitem {Track\-Ball}, 51
+  \item {mouseY}
+    \subitem {Track\-Ball}, 51
+
+  \indexspace
+
+  \item {nEdges}
+    \subitem {Mesh}, 44
+  \item {nFaces}
+    \subitem {Mesh}, 44
+  \item {normal}
+    \subitem {Face}, 20
+    \subitem {Vertex}, 68
+  \item {normalize}
+    \subitem {Mesh}, 41
+    \subitem {Vector3D}, 55
+  \item {nVerts}
+    \subitem {Mesh}, 44
+
+  \indexspace
+
+  \item {operator $\ast$}
+    \subitem {Vector3D}, 56
+  \item {operator $\ast$=}
+    \subitem {Vector3D}, 56
+  \item {operator+}
+    \subitem {Vector3D}, 56
+  \item {operator+=}
+    \subitem {Vector3D}, 56
+  \item {operator-}
+    \subitem {Vector3D}, 57
+  \item {operator-=}
+    \subitem {Vector3D}, 57
+  \item {operator/}
+    \subitem {Vector3D}, 57
+  \item {operator/=}
+    \subitem {Vector3D}, 57
+  \item {operator=}
+    \subitem {Face}, 19
+    \subitem {Map}, 24
+    \subitem {Mesh}, 41
+    \subitem {Track\-Ball}, 50
+    \subitem {Vector3D}, 57
+    \subitem {Vertex}, 65
+
+  \indexspace
+
+  \item {pos}
+    \subitem {Vertex}, 68
+  \item {print}
+    \subitem {Vector3D}, 58
+    \subitem {Vertex}, 65
+  \item {printColor}
+    \subitem {Vertex}, 65
+  \item {printData}
+    \subitem {Map}, 24
+  \item {printID}
+    \subitem {Vertex}, 65
+  \item {printIData}
+    \subitem {Map}, 25
+  \item {printInfos}
+    \subitem {Map}, 25
+    \subitem {Mesh}, 41
+  \item {printNormal}
+    \subitem {Vertex}, 65
+  \item {printPos}
+    \subitem {Vertex}, 66
+
+  \indexspace
+
+  \item {save}
+    \subitem {Map}, 25
+  \item {segment}
+    \subitem {Map}, 25
+  \item {set}
+    \subitem {Vector3D}, 58
+  \item {setAngleY}
+    \subitem {Track\-Ball}, 50
+  \item {setAngleZ}
+    \subitem {Track\-Ball}, 50
+  \item {setColor}
+    \subitem {Vertex}, 66
+  \item {setData}
+    \subitem {Map}, 26
+  \item {setEdges}
+    \subitem {Face}, 19
+    \subitem {Mesh}, 42
+    \subitem {Vertex}, 66
+  \item {setFaces}
+    \subitem {Edge}, 13
+    \subitem {Mesh}, 42
+  \item {setHead}
+    \subitem {Edge}, 13
+  \item {setID}
+    \subitem {Edge}, 13
+    \subitem {Face}, 20
+    \subitem {Mesh}, 42
+    \subitem {Vertex}, 67
+  \item {setIData}
+    \subitem {Map}, 26
+  \item {setMax}
+    \subitem {Map}, 26
+  \item {setMin}
+    \subitem {Map}, 27
+  \item {setMouseX}
+    \subitem {Track\-Ball}, 50
+  \item {setMouseY}
+    \subitem {Track\-Ball}, 51
+  \item {setNEdges}
+    \subitem {Mesh}, 42
+  \item {setNFaces}
+    \subitem {Mesh}, 43
+  \item {setNormal}
+    \subitem {Face}, 20
+    \subitem {Vertex}, 67
+  \item {setNVerts}
+    \subitem {Mesh}, 43
+  \item {setPos}
+    \subitem {Vertex}, 67, 68
+  \item {setState}
+    \subitem {Track\-Ball}, 51
+  \item {setTail}
+    \subitem {Edge}, 13
+  \item {setTwin}
+    \subitem {Edge}, 14
+  \item {setVerts}
+    \subitem {Mesh}, 43
+  \item {setX}
+    \subitem {Vector3D}, 58
+  \item {setY}
+    \subitem {Vector3D}, 58
+  \item {setZ}
+    \subitem {Vector3D}, 59
+  \item {SMOOTH}
+    \subitem {mesh.h}, 71
+
+  \indexspace
+
+  \item {tail}
+    \subitem {Edge}, 14
+  \item {tools.h}
+    \subitem {DEGREES}, 73
+    \subitem {tools\_\-colorFromValue}, 74
+    \subitem {tools\_\-couleurfinale}, 74
+    \subitem {tools\_\-couleurpure}, 74
+    \subitem {tools\_\-couleursaturee}, 75
+    \subitem {tools\_\-crossProduct}, 75
+    \subitem {tools\_\-TLStoRGB}, 75
+  \item {tools\_\-colorFromValue}
+    \subitem {tools.h}, 74
+  \item {tools\_\-couleurfinale}
+    \subitem {tools.h}, 74
+  \item {tools\_\-couleurpure}
+    \subitem {tools.h}, 74
+  \item {tools\_\-couleursaturee}
+    \subitem {tools.h}, 75
+  \item {tools\_\-crossProduct}
+    \subitem {tools.h}, 75
+  \item {tools\_\-TLStoRGB}
+    \subitem {tools.h}, 75
+  \item {toVector}
+    \subitem {Edge}, 14
+  \item {TrackBall}, 45
+    \subitem {Track\-Ball}, 47
+  \item {Track\-Ball}
+    \subitem {$\sim$TrackBall}, 47
+    \subitem {angleY}, 51
+    \subitem {angleZ}, 51
+    \subitem {displayBeginGL\_\-GLUT}, 47
+    \subitem {displayEndGL\_\-GLUT}, 47
+    \subitem {getAngleY}, 48
+    \subitem {getAngleZ}, 48
+    \subitem {getMouseX}, 48
+    \subitem {getMouseY}, 48
+    \subitem {getState}, 49
+    \subitem {motionGL\_\-GLUT}, 49
+    \subitem {mouseGL\_\-GLUT}, 49
+    \subitem {mouseX}, 51
+    \subitem {mouseY}, 51
+    \subitem {operator=}, 50
+    \subitem {setAngleY}, 50
+    \subitem {setAngleZ}, 50
+    \subitem {setMouseX}, 50
+    \subitem {setMouseY}, 51
+    \subitem {setState}, 51
+    \subitem {TrackBall}, 47
+  \item {twin}
+    \subitem {Edge}, 14
+
+  \indexspace
+
+  \item {Vector3D}, 52
+    \subitem {$\sim$Vector3D}, 54
+    \subitem {clear}, 55
+    \subitem {getArray}, 55
+    \subitem {getX}, 55
+    \subitem {getY}, 55
+    \subitem {getZ}, 55
+    \subitem {normalize}, 55
+    \subitem {operator $\ast$}, 56
+    \subitem {operator $\ast$=}, 56
+    \subitem {operator+}, 56
+    \subitem {operator+=}, 56
+    \subitem {operator-}, 57
+    \subitem {operator-=}, 57
+    \subitem {operator/}, 57
+    \subitem {operator/=}, 57
+    \subitem {operator=}, 57
+    \subitem {print}, 58
+    \subitem {set}, 58
+    \subitem {setX}, 58
+    \subitem {setY}, 58
+    \subitem {setZ}, 59
+    \subitem {Vector3D}, 54
+    \subitem {y}, 59
+    \subitem {z}, 59
+  \item {Vertex}, 60
+    \subitem {$\sim$Vertex}, 62
+    \subitem {addEdge}, 62
+    \subitem {color}, 68
+    \subitem {containsEdge}, 62
+    \subitem {edges}, 68
+    \subitem {getColor}, 63
+    \subitem {getColorArray}, 63
+    \subitem {getEdges}, 63
+    \subitem {getID}, 63
+    \subitem {getIEdge}, 64
+    \subitem {getNormal}, 64
+    \subitem {getNormalArray}, 64
+    \subitem {getPos}, 64
+    \subitem {getPosArray}, 64
+    \subitem {normal}, 68
+    \subitem {operator=}, 65
+    \subitem {pos}, 68
+    \subitem {print}, 65
+    \subitem {printColor}, 65
+    \subitem {printID}, 65
+    \subitem {printNormal}, 65
+    \subitem {printPos}, 66
+    \subitem {setColor}, 66
+    \subitem {setEdges}, 66
+    \subitem {setID}, 67
+    \subitem {setNormal}, 67
+    \subitem {setPos}, 67, 68
+    \subitem {Vertex}, 62
+  \item {VERTICES}
+    \subitem {mesh.h}, 71
+  \item {verts}
+    \subitem {Mesh}, 44
+
+  \indexspace
+
+  \item {y}
+    \subitem {Vector3D}, 59
+
+  \indexspace
+
+  \item {z}
+    \subitem {Vector3D}, 59
+
+\end{theindex}

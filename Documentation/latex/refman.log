@@ -1,0 +1,1934 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2010.12.21)  17 JUN 2011 10:47
+entering extended mode
+**refman.tex
+(./refman.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2004/02/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk10.clo
+File: bk10.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/a4wide/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/usr/share/texmf/tex/latex/ntgclass/a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+(/usr/share/texmf/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2004/02/14 v1.6e multicolumn formatting (FMi)
+\c@tracingmulticols=\count88
+\mult@box=\box26
+\multicol@leftmargin=\dimen105
+\c@unbalance=\count89
+\c@collectmore=\count90
+\doublecol@number=\count91
+\multicoltolerance=\count92
+\multicolpretolerance=\count93
+\full@width=\dimen106
+\page@free=\dimen107
+\premulticols=\dimen108
+\postmulticols=\dimen109
+\multicolsep=\skip52
+\multicolbaselineskip=\skip53
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count94
+\c@finalcolumnbadness=\count95
+\last@try=\dimen110
+\multicolovershoot=\dimen111
+\multicolundershoot=\dimen112
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+(/usr/share/texmf/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks15
+\float@box=\box52
+\@float@everytoks=\toks16
+\@floatcapt=\box53
+)
+(/usr/share/texmf/tex/latex/base/textcomp.sty
+Package: textcomp 2004/02/22 v1.99f Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/usr/share/texmf/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+) (./doxygen.sty
+Package: doxygen 
+
+(/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count97
+\calc@Bcount=\count98
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count99
+)
+(/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 2003/12/17 v2.4a Tabular extension package (FMi)
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks17
+\extratabsurround=\skip56
+\backup@length=\skip57
+)
+\tmplength=\skip58
+)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2004/02/22 v1.99f Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2004/02/22 v1.99f Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+(./refman.aux (./classFace.aux) (./classMap.aux) (./classMesh.aux)
+(./classTrackBall.aux) (./classVector3D.aux) (./classVertex.aux) (./map_8h.aux)
+(./mesh_8h.aux) (./tools_8h.aux) (./trackball_8h.aux) (./vector3d_8h.aux))
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
+
+(/usr/share/texmf/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 14.
+ [1
+
+
+] [2
+
+] (./refman.toc
+
+LaTeX Warning: Reference `classMesh' on page 1 undefined on input line 1.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+ [][] []\T1/cmr/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-
+mesh- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+ [][] []\T1/cmr/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-
+mesh- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+ [][] []\T1/cmr/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-
+mesh- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+ [][] []\T1/cmr/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-
+mesh- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+ [][] []\T1/cmr/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-
+mesh- 
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+ [][] []\T1/cmr/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-
+mesh- 
+ []
+
+)
+\tf@toc=\write4
+\openout4 = `refman.toc'.
+
+ [2]
+Chapter 1.
+(./index.tex
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
+ (/usr/share/texmf/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/cmtt/m/n/10 The Simple Mesh (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 28[]) Library
+ is a free c++ library to manipulate meshes. It
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/cmtt/m/n/10 uses a half edge representation of a mesh. It is based on the G
+MTools library,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+[]\T1/cmtt/m/n/10 This deposit contains the source code, some examples applicat
+ions with the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[]\T1/cmtt/m/n/10 YOU HAVE TO HAVE THE OPENGL AND THE GLUT LIBRARIES TO USE THI
+S LIBRARY OR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[]\T1/cmtt/m/n/10 IF YOU DO NOT, PLEASE INSTALL IT OR COMMENT THE PART OF THE C
+ODE THAT USES
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 16.
+
+(/usr/share/texmf/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+))
+Underfull \hbox (badness 10000) in paragraph at lines 19--32
+[]\T1/cmtt/m/n/10 The first one contains all the source code files while the se
+cond one contains
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--32
+\T1/cmtt/m/n/10 only the headers. The third contains a set of simple executable
+ software.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--32
+\T1/cmtt/m/n/10 Finally the fourth one contains the source code of each executa
+ble in the bin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--32
+\T1/cmtt/m/n/10 directory. The code is documented in this section and tries to 
+help beginers to
+ []
+
+[1
+
+
+] [2
+
+]
+Chapter 2.
+(./annotated.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+\T1/cmtt/m/n/10 Here are the classes, structs, unions and interfaces with brief
+
+ []
+
+) [3] [4
+
+]
+Chapter 3.
+(./files.tex
+
+LaTeX Warning: Reference `mainPageDoxygen_8h' on page 5 undefined on input line
+ 3.
+
+
+Overfull \hbox (33.5984pt too wide) in paragraph at lines 4--4
+ [][] \T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-m
+esh-library/inc/\T1/cmr/bx/n/10 define.h 
+ []
+
+
+Overfull \hbox (25.45456pt too wide) in paragraph at lines 5--5
+ [][] \T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-m
+esh-library/inc/\T1/cmr/bx/n/10 map.h 
+ []
+
+
+Overfull \hbox (29.6702pt too wide) in paragraph at lines 6--6
+ [][] \T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-m
+esh-library/inc/\T1/cmr/bx/n/10 mesh.h 
+ []
+
+
+Overfull \hbox (27.91368pt too wide) in paragraph at lines 7--7
+ [][] \T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-m
+esh-library/inc/\T1/cmr/bx/n/10 tools.h 
+ []
+
+
+Overfull \hbox (47.91435pt too wide) in paragraph at lines 8--8
+ [][] \T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-m
+esh-library/inc/\T1/cmr/bx/n/10 trackball.h 
+ []
+
+
+Overfull \hbox (47.11594pt too wide) in paragraph at lines 9--9
+ [][] \T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-m
+esh-library/inc/\T1/cmr/bx/n/10 vector3d.h 
+ []
+
+) [5] [6
+
+]
+Chapter 4.
+(./pages.tex) [7] [8
+
+]
+Chapter 5.
+(./classEdge.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 Classe représentant une arete (demi-arete), soit, deux sommets
+ relies entre eux
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+\T1/cmtt/m/n/10 Classe représentant une arete (demi-arete), soit, deux sommets
+ relies entre eux
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[]\T1/cmtt/m/n/10 Une arete (demi-arete) est representee par ses elements les p
+lus courant, a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\T1/cmtt/m/n/10 savoir : deux sommets, l'un en tete et l'autre en queue - ce qu
+i permet de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\T1/cmtt/m/n/10 connaitre le sens de l'arete - un identifiant qui devrait etre 
+unique pour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\T1/cmtt/m/n/10 chaque arete (demi-arete) d'un meme maillage et un pointeur ver
+s sa (demi-arete)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\T1/cmtt/m/n/10 jumelle. Sa jumelle etant l'arete dont la tete correspond a la 
+queue de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\T1/cmtt/m/n/10 celle-ci et vice versa. Les informations de voisinnage s'obtien
+nent par le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\T1/cmtt/m/n/10 biais d'un tableau de faces contenant toutes les faces qui cont
+iennent cette
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+[]\T1/cmtt/m/n/10 Default constructor of the Edge (\T1/cmr/m/n/10 p.\T1/cmtt/m/
+n/10 9[]) class : Every attributes are initialized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+\T1/cmtt/m/n/10 to 0 (int,float,double,...) NULL (pointers) or are cleared (lis
+ts, stacks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+[]\T1/cmtt/m/n/10 Default constructor of the Edge (\T1/cmr/m/n/10 p.\T1/cmtt/m/
+n/10 9[]) class : Every attributes are initialized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+\T1/cmtt/m/n/10 to 0 (int,float,double,...) NULL (pointers) or are cleared (lis
+ts, stacks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/cmtt/m/n/10 (vector$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 Face$\OMS/cmsy/m/n
+/10 ^^C$$\OML/cmm/m/it/10 >$\T1/cmtt/m/n/10 ) returns a vector containing the f
+aces that contain the
+ []
+
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/cmtt/m/n/10 : vector containing faces to affect to the faces attribut of 
+the
+ []
+
+[13] [14]
+Overfull \hbox (17.60358pt too wide) in paragraph at lines 306--306
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 define.h 
+ []
+
+) [15]
+\openout2 = `classFace.aux'.
+
+ (./classFace.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 Classe représentant une face, soit, un polygone appartenant au
+ mesh. Une face
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 est representee par ses elements les plus courant, a savoir : u
+n idfentifiant
+ []
+
+[16
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+\T1/cmtt/m/n/10 Classe représentant une face, soit, un polygone appartenant au
+ mesh. Une face
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+\T1/cmtt/m/n/10 est representee par ses elements les plus courant, a savoir : u
+n idfentifiant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+[]\T1/cmtt/m/n/10 Le polygone d'une face s'obtient en parcourant dans l'ordre l
+e tableau d'aretes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\T1/cmtt/m/n/10 de la face : une face dont le polygone est forme des points {0,
+ 1, 2} aura le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\T1/cmtt/m/n/10 tableau d'aretes suivant : {[0,1] [1,2] [2,0]} avec [0,1] repre
+sentant l'arete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\T1/cmtt/m/n/10 qui part du point 0 pour aller vers le point 1. Les information
+s de voisinnage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\T1/cmtt/m/n/10 s'obtiennent aussi en parcourant ce tableau (et eventuellement 
+les tableaux de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+[]\T1/cmtt/m/n/10 Default constructor of the Face (\T1/cmr/m/n/10 p.\T1/cmtt/m/
+n/10 16[]) class : Every attributes are initialized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+\T1/cmtt/m/n/10 to 0 (int,float,double,...) NULL (pointers) or are cleared (lis
+ts, stacks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+[]\T1/cmtt/m/n/10 Copy constructor of the Face (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/1
+0 16[]) class : Every attributes are initialized to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+[]\T1/cmtt/m/n/10 Overloaded constructor of the Face (\T1/cmr/m/n/10 p.\T1/cmtt
+/m/n/10 16[]) class : fill the id and of the edge.
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[]\T1/cmtt/m/n/10 Overloaded constructor of the Face (\T1/cmr/m/n/10 p.\T1/cmtt
+/m/n/10 16[]) class : fill the id and the edges
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[]\T1/cmtt/m/n/10 Destructor of the Face (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 16[]
+) class : Every attributes are initialized to 0
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+[]\T1/cmtt/m/n/10 Getter of the Face (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 16[]) cl
+ass, returns a doule array instead of a Vector3D
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+[]\T1/cmtt/m/n/10 Affectation operator of the Face (\T1/cmr/m/n/10 p.\T1/cmtt/m
+/n/10 16[]) class : Every attributes are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+\T1/cmtt/m/n/10 initialized to 0 (int,float,double,...) NULL (pointers) or are 
+cleared (lists,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]\T1/cmtt/m/n/10 : vector of the edges we want to affect to the edges attribut
+e of
+ []
+
+[19]
+Overfull \hbox (17.60358pt too wide) in paragraph at lines 258--258
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 define.h 
+ []
+
+) [20]
+\openout2 = `classMap.aux'.
+
+ (./classMap.tex [21
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+[]\T1/cmtt/m/n/10 Default constructor of the Map (\T1/cmr/m/n/10 p.\T1/cmtt/m/n
+/10 21[]) class : Every attributes are initialized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+\T1/cmtt/m/n/10 to 0 (int,float,double,...) NULL (pointers) or are cleared (lis
+ts, stacks,
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]\T1/cmtt/m/n/10 Clears a map : Every attributes are initialized to 0 (int,flo
+at,double,...)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]\T1/cmtt/m/n/10 (vector$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 double$\OML/cmm/m/
+it/10 >$\T1/cmtt/m/n/10 ) returns an array of double containing every feature o
+f the
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]\T1/cmtt/m/n/10 Loads a map from a file AND expand this map between -50 to 50
+. A map stored
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+\T1/cmtt/m/n/10 in a file is stored as follw : For each vertex of the mesh, one
+ value is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+\T1/cmtt/m/n/10 printed in the file. So, usually there is one value per line in
+ the file but
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+\T1/cmtt/m/n/10 the end-line-caracter can be suppressed and the values all prin
+ted in a single
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+[]\T1/cmtt/m/n/10 Prints the value of each element of the map in the terminal a
+s follow : Number-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+[]\T1/cmtt/m/n/10 Prints the value of the ith element of the map as follow : Nu
+mber-Of-Element :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+[]\T1/cmtt/m/n/10 Prints some informations about the map in the terminal : The 
+minimum and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+[]\T1/cmtt/m/n/10 Segments the map in n classes based on a value criteria : Eac
+h vertex value
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+\T1/cmtt/m/n/10 will be set to its class number. The class numbers are set acco
+rding to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+\T1/cmtt/m/n/10 minimum and maximum value of the map and also the number of cla
+ss we want to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+\T1/cmtt/m/n/10 create : If the map values range is [0, 100] and we want to cre
+ate 10 classes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+\T1/cmtt/m/n/10 then the vertex which value is 34 will be set to 30 and the ver
+tex which value
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+[]\T1/cmtt/m/n/10 : number of classes we want to create in the map. Is set to 1
+0 by
+ []
+
+[26]
+Overfull \hbox (9.45973pt too wide) in paragraph at lines 351--351
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 map.h 
+ []
+
+) [27]
+\openout2 = `classMesh.aux'.
+
+ (./classMesh.tex [28
+
+
+] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+[]\T1/cmtt/m/n/10 Un maillage est represente par ses principales caracteristiqu
+es : son nombre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmtt/m/n/10 de sommets, d'aretes et de faces. Ainsi que trois vectors (pour
+ des raisons de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmtt/m/n/10 simplicite nous avons choisi d'utiliser des vectors et non des 
+tableaux alloues
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmtt/m/n/10 dynamiquement) donnant la liste exhaustive de tous ces sommets,
+ demi-aretes et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmtt/m/n/10 faces du maillage. On attribue aussi a chaque maillage un ident
+ifiant qu'il
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\T1/cmtt/m/n/10 Des ameliorations peuvent etre apportes a cette classe, notam
+ment des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+\T1/cmtt/m/n/10 methodes-outils qui n'existent pas encore, l'ajout d'un attribu
+t de type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+\T1/cmtt/m/n/10 boumding box ainsi que les methodes qui vont avec (accesseurs/m
+odificateurs,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+[]\T1/cmtt/m/n/10 Default constructor of the Mesh (\T1/cmr/m/n/10 p.\T1/cmtt/m/
+n/10 28[]) class : Every attributes are initialized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+\T1/cmtt/m/n/10 to 0 (int,float,double,...) NULL (pointers) or are cleared (lis
+ts, stacks,
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+[]\T1/cmtt/m/n/10 Adds a pointer on a edge to the edge vector of the mesh and u
+pdates the n-Edges
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]\T1/cmtt/m/n/10 Adds a pointer on a face to the face vector of the mesh and u
+pdates the n-Faces
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+[]\T1/cmtt/m/n/10 Adds a pointer on a vertex to the vertex vector of the mesh a
+nd updates the n-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+[]\T1/cmtt/m/n/10 All attributes will be set to 0 (int, float, double, ...), NU
+LL (pointers) or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+[]\T1/cmtt/m/n/10 Color each vertex of the mesh according to its map value : Fi
+lls the color
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+\T1/cmtt/m/n/10 attribute of the vertex. Its value is transformed in a color in
+terpolated from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+[]\T1/cmtt/m/n/10 Computes the normals of every faces and every vertex of the m
+esh. The computed
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]\T1/cmtt/m/n/10 (int) Returns the index of the edge if the half edge with the
+se two vertices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+[]\T1/cmtt/m/n/10 Open-GL routine to display a mesh in different ways. The colo
+r displayed will be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]\T1/cmtt/m/n/10 : mode we want to display the mesh. Can be VERTICES, EDGES, F
+ACES
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[]\T1/cmtt/m/n/10 Open-GL routine to display the edges of a mesh. The color dis
+played will be the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
+[]\T1/cmtt/m/n/10 Open-GL routine to display the edges of a mesh. !! writes two
+ times every edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+[]\T1/cmtt/m/n/10 Open-GL routine to display the faces of a mesh. Normals are s
+imply normals to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+[]\T1/cmtt/m/n/10 Open-GL routine to display the faces of a mesh. Normals are s
+imply normals to
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+[]\T1/cmtt/m/n/10 Open-GL routine to display the faces of a mesh. The normals a
+re computed with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+\T1/cmtt/m/n/10 the face vertices normals and are interpolated. The color displ
+ayed will be the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+[]\T1/cmtt/m/n/10 Open-GL routine to display the faces of a mesh. The normals a
+re computed with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+[]\T1/cmtt/m/n/10 Open-GL routine to display an edge of a mesh. The color displ
+ayed will be the
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+[]\T1/cmtt/m/n/10 Open-GL routine to display the ith face of a mesh. The normal
+ is simply the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+[]\T1/cmtt/m/n/10 Open-GL routine to display the ith face of a mesh. The normal
+ is simply the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+[]\T1/cmtt/m/n/10 Open-GL routine to display the ith face of a mesh. The normal
+ is computed with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+\T1/cmtt/m/n/10 the face vertices normals and is interpolated. The color displa
+yed will be the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
+[]\T1/cmtt/m/n/10 Open-GL routine to display the ith face of a mesh. The normal
+ is computed with
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
+[]\T1/cmtt/m/n/10 Open-GL routine to display one of the vertices of a mesh. The
+ color displayed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+[]\T1/cmtt/m/n/10 Open-GL routine to display the vertices of a mesh. The color 
+displayed will be
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
+[]\T1/cmtt/m/n/10 (vector$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 Edge$\OMS/cmsy/m/n
+/10 ^^C$$\OML/cmm/m/it/10 >$\T1/cmtt/m/n/10 ) returns an array containing a poi
+nter to each half edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
+[]\T1/cmtt/m/n/10 (vector$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 Face$\OMS/cmsy/m/n
+/10 ^^C$$\OML/cmm/m/it/10 >$\T1/cmtt/m/n/10 ) returns an array containing a poi
+nter to each face
+ []
+
+[39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
+[]\T1/cmtt/m/n/10 (vector$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 Vertex$\OMS/cmsy/m
+/n/10 ^^C$$\OML/cmm/m/it/10 >$\T1/cmtt/m/n/10 ) returns an array containing a p
+ointer to each vertex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+[]\T1/cmtt/m/n/10 Loads a wavefront ".obj" mesh from the _-path file. This is a
+ basic version
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+\T1/cmtt/m/n/10 of a loader : does not support the comment lines, the texture l
+ines or the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+\T1/cmtt/m/n/10 normal lines. This has to be report and fixed. For OBJ format s
+pec., see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
+[]\T1/cmtt/m/n/10 The loader should be rewritten to support the comment lines a
+nd other types
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
+[]\T1/cmtt/m/n/10 Resize the mesh to a unit-length box : The biggest direction 
+of the mesh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
+\T1/cmtt/m/n/10 (Ox or Oy or Oz) will be set to 1 after scaling, the other dire
+ctions will be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+[]\T1/cmtt/m/n/10 Print some informations about the mesh in the terminal : Numb
+er of vertices,
+ []
+
+[41] [42] [43]
+Overfull \hbox (13.67537pt too wide) in paragraph at lines 847--847
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 mesh.h 
+ []
+
+) [44]
+\openout2 = `classTrackBall.aux'.
+
+ (./classTrackBall.tex [45
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]\T1/cmtt/m/n/10 Classe représentant une trackball simpliste pour une visuali
+sation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\T1/cmtt/m/n/10 user-friendly de la scene 3D. Une trackball de cette classe s'a
+ttache a un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\T1/cmtt/m/n/10 boutton particulier de la souris. L'activation de la trackball 
+se fait par
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\T1/cmtt/m/n/10 display-Begin() : doit etre placee au debut du callback de de
+ssin de la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\T1/cmtt/m/n/10 mouse-GLUT(...) : doit etre place dans le callback en charge 
+des evenements
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\T1/cmtt/m/n/10 motion-GLUT(...) : doit etre place dans le callback en charge
+ des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+[]\T1/cmtt/m/n/10 IF YOU USE SOME OTHERS LIBRARIES FOR YOUR SOFTWARE, PLEASE WR
+ITE YOUR OWN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+\T1/cmtt/m/n/10 display/mouse/motion METHODS WITH THE GRAPHIC LIBRARY USED AND 
+THE WINDOW
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+[]\T1/cmtt/m/n/10 EXAMPLE : display-Begin-GL_-GTK(), display-End-GL_-GTK(), ...
+ IF YOU ARE USING
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\T1/cmtt/m/n/10 Cette trackball a vocation a etre amelioree/reecrite puisqu'ell
+e ne suit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\T1/cmtt/m/n/10 pas exactement les attentes de l'utilisateur. Toutefois elle pe
+rmet une
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]\T1/cmtt/m/n/10 Ameliorer la trackball pour la rendre plus intuitive (pour l'
+instant elle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+\T1/cmtt/m/n/10 ne suis pas exactement les attentes de l'utilisateur mais a le 
+merite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+[]\T1/cmtt/m/n/10 Default constructor of the Track-Ball (\T1/cmr/m/n/10 p.\T1/c
+mtt/m/n/10 45[]) class : Every attributes are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+\T1/cmtt/m/n/10 initialized to 0 (int,float,double,...) NULL (pointers) or are 
+cleared (lists,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+\T1/cmtt/m/n/10 Method that sets the Open-GL environement to display a 3D scene
+ with a trackball
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\T1/cmtt/m/n/10 Method that sets the Open-GL environement to display a 3D sce
+ne with a trackball
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]\T1/cmtt/m/n/10 This method has to be placed at the first line (after the col
+or buffer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+\T1/cmtt/m/n/10 Method that sets the Open-GL environement to display a 3D scene
+ with a trackball
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/cmtt/m/n/10 Method that sets the Open-GL environement to display a 3D sce
+ne with a trackball
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]\T1/cmtt/m/n/10 This method has to be placed at the last line (before the flu
+shing buffers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]\T1/cmtt/m/n/10 (int) Returns the trackball old mouse cursor's positions on t
+he window Ox
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]\T1/cmtt/m/n/10 (int) Returns the trackball old mouse cursor's positions on t
+he window Oy
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+\T1/cmtt/m/n/10 Method managing the mouse motion GLUT events and sets the track
+ball parameters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
+[]\T1/cmtt/m/n/10 Method managing the mouse motion GLUT events and sets the tra
+ckball parameters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]\T1/cmtt/m/n/10 : The position of the mouse cursor along the Ox window axe wh
+en the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]\T1/cmtt/m/n/10 : The position of the mouse cursor along the Oy window when t
+he callback
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+\T1/cmtt/m/n/10 Method managing the mouse GLUT events and sets the trackball pa
+rameters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]\T1/cmtt/m/n/10 Method managing the mouse GLUT events and sets the trackball 
+parameters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+[]\T1/cmtt/m/n/10 : Button the user wants to attach the trackball
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+\T1/cmtt/m/n/10 activation. Can be set to : GLUT_-LEFT_-BUTTON, GLUT_-MIDDLE_-B
+UTTON or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+[]\T1/cmtt/m/n/10 : The position of the mouse cursor along the Ox window axe wh
+en the
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+[]\T1/cmtt/m/n/10 : The position of the mouse cursor along the Oy window when t
+he callback
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]\T1/cmtt/m/n/10 : Old cursor's position along the Ox window axe to attribute 
+to the
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\T1/cmtt/m/n/10 : Old cursor's position along the Oy window axe to attribute 
+to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
+$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 State of the trackball : ON (true) or OFF (
+false) wether the attached button
+ []
+
+
+Overfull \hbox (31.91953pt too wide) in paragraph at lines 332--332
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 trackball.h 
+ []
+
+) [51]
+\openout2 = `classVector3D.aux'.
+
+ (./classVector3D.tex [52
+
+
+] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]\T1/cmtt/m/n/10 Un vecteur en trois dimension est represente par un triplet d
+e double. Une
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+\T1/cmtt/m/n/10 telle classe peut representer un point de l'espace, un vecteur 
+mathematique de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]\T1/cmtt/m/n/10 Rajouter un operateur[] pour acceder a x,y et z facilement : 
+comme si le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+[]\T1/cmtt/m/n/10 Default constructor of the Vector3D (\T1/cmr/m/n/10 p.\T1/cmt
+t/m/n/10 52[]) class : Every attributes are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/cmtt/m/n/10 initialized to 0 (int,float,double,...) NULL (pointers) or are 
+cleared (lists,
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+[]\T1/cmtt/m/n/10 Clears a 3D vector : Every attributes are initialized to 0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+[]\T1/cmtt/m/n/10 Getter of the Vector3D (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 52[]
+) class. This one is a little special while it is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+\T1/cmtt/m/n/10 implemented to get all the vector data into one array. This mig
+ht be usefull
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\T1/cmtt/m/n/10 (double$\OMS/cmsy/m/n/10 ^^C$\T1/cmtt/m/n/10 ) returns an arr
+ay of double containing the Vector3D (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 52[])
+ []
+
+[55] [56] [57] [58]
+Overfull \hbox (31.12111pt too wide) in paragraph at lines 405--405
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 vector3d.h 
+ []
+
+) [59]
+\openout2 = `classVertex.aux'.
+
+ (./classVertex.tex [60
+
+
+] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]\T1/cmtt/m/n/10 Un vertex est represente par ses elements les plus courant, a
+ savoir : sa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+\T1/cmtt/m/n/10 position dans l'espace, un numero d'identification, un vecteur 
+normal, et une
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+\T1/cmtt/m/n/10 couleur. Les informations de voisinnage s'obtiennent a l'aide d
+'une liste
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+[]\T1/cmtt/m/n/10 Default constructor of the Vertex (\T1/cmr/m/n/10 p.\T1/cmtt/
+m/n/10 60[]) class : Every attributes are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+\T1/cmtt/m/n/10 initialized to 0 (int,float,double,...) NULL (pointers) or are 
+cleared (lists,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+[]\T1/cmtt/m/n/10 Overloaded constructor of the Vertex (\T1/cmr/m/n/10 p.\T1/cm
+tt/m/n/10 60[]) class : fill the id of the vertex
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+[]\T1/cmtt/m/n/10 Check for the existing of an edge in the edge vector of a ver
+tex given the two
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+[]\T1/cmtt/m/n/10 (int) Returns the index of the edge if the vertex contains th
+e edge given by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
+\T1/cmtt/m/n/10 the two vertices of index _-i-Tail (for the tail vertex) and _-
+i-Head (for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\T1/cmtt/m/n/10 (double$\OMS/cmsy/m/n/10 ^^C$\T1/cmtt/m/n/10 ) returns the co
+lor of the vertex in space as an array of three
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]\T1/cmtt/m/n/10 (vector$\OML/cmm/m/it/10 <$\T1/cmtt/m/n/10 Edge$\OMS/cmsy/m/n
+/10 ^^C$$\OML/cmm/m/it/10 >$\T1/cmtt/m/n/10 ) returns a vector containing all t
+he edges which tail is the
+ []
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+[]\T1/cmtt/m/n/10 (double$\OMS/cmsy/m/n/10 ^^C$\T1/cmtt/m/n/10 ) returns the no
+rmal of the vertex in spaceas an array of three
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]\T1/cmtt/m/n/10 (double$\OMS/cmsy/m/n/10 ^^C$\T1/cmtt/m/n/10 ) returns the lo
+cation of the vertex in space as an array of three
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[]\T1/cmtt/m/n/10 Prints informations about the vertex in the terminal : id, po
+sition, normal,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+[]\T1/cmtt/m/n/10 Prints the color of the vertex in the terminal as follow : "C
+olor [ x, y, z
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+[]\T1/cmtt/m/n/10 Prints the ID of the vertex in the terminal as follow : "posi
+tion [ x, y, z
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+[]\T1/cmtt/m/n/10 Prints the normal of the vertex in the terminal as follow : "
+Normal [ x, y, z
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+[]\T1/cmtt/m/n/10 Prints the Position of the vertex in the terminal as follow :
+ "position [ x, y,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+[]\T1/cmtt/m/n/10 Setter of the Vertex (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 60[]) 
+class, this one is written to have a double array in
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+[]\T1/cmtt/m/n/10 Setter of the Vertex (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 60[]) 
+class, this one is written to have a double array in
+ []
+
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+[]\T1/cmtt/m/n/10 Setter of the Vertex (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 60[]) 
+class, this one is written to have a double array in
+ []
+
+
+Overfull \hbox (17.60358pt too wide) in paragraph at lines 470--470
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-CPP/simple-mesh-
+library/inc/\T1/cmr/bx/n/10 define.h 
+ []
+
+) [68]
+Chapter 6.
+(./define_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+) [69
+
+
+]
+\openout2 = `map_8h.aux'.
+
+ (./map_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 Declaration de la classe Map (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 
+21[]) representant une carte de feature (double)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/cmtt/m/n/10 Declaration de la classe Map (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 
+21[]) representant une carte de feature (double)
+ []
+
+) [70
+
+]
+\openout2 = `mesh_8h.aux'.
+
+ (./mesh_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 Declaration de la classe Mesh (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10
+ 28[]) representant un maillage avec une structure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+\T1/cmtt/m/n/10 Declaration de la classe Mesh (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10
+ 28[]) representant un maillage avec une structure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+\T1/cmtt/m/n/10 display mode : only display the mesh faces, each faces will be 
+display with a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+\T1/cmtt/m/n/10 display mode : only display the mesh faces, each faces will be 
+displayed taking
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+\T1/cmtt/m/n/10 in acount it's vertices normals that will be interpolated along
+ the face, giving
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 35.0982pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71
+
+
+] [72]
+\openout2 = `tools_8h.aux'.
+
+ (./tools_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[]\T1/cmtt/m/n/10 Ce fichier ne contient que des fonctions non membres qu'il me
+ semblait plus
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 35.0982pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\T1/cmtt/m/n/10 Creates a color from a value : The value is the angle given b
+y the future color
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/cmtt/m/n/10 on the TLS circle. (it represents the T value, while the L valu
+e is set to 0.5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+\T1/cmtt/m/n/10 NON MEMBER FUNCTION : Part of a pipeline of functions to conver
+t a TLS color to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+[]\T1/cmtt/m/n/10 Part of a pipeline of functions to convert a TLS color to a R
+GB one. The other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/cmtt/m/n/10 parts of the process are the tools_-couleursaturee and the tool
+s_-couleurfinale.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/cmtt/m/n/10 The whole process is given by the tools_-TLSto-RGB or the tools
+_-color-From-Value
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[]\T1/cmtt/m/n/10 This function modify the rslt color by taking in account the 
+S value of the TLS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]\T1/cmtt/m/n/10 : a color coded in a TLS format and stored in a Vector3D (\T1
+/cmr/m/n/10 p.\T1/cmtt/m/n/10 52[]). This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T1/cmtt/m/n/10 NON MEMBER FUNCTION : Part of a pipeline of functions to conver
+t a TLS color to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]\T1/cmtt/m/n/10 Part of a pipeline of functions to convert a TLS color to a R
+GB one. The other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+\T1/cmtt/m/n/10 parts of the process are the tools_-couleursaturee and the tool
+s_-couleurfinale.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+\T1/cmtt/m/n/10 The whole process is given by the tools_-TLSto-RGB or the tools
+_-color-From-Value
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]\T1/cmtt/m/n/10 This function modify the rslt color by taking in account the 
+T value of the TLS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+[]\T1/cmtt/m/n/10 : a color coded in a TLS format and stored in a Vector3D (\T1
+/cmr/m/n/10 p.\T1/cmtt/m/n/10 52[]). This
+ []
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/cmtt/m/n/10 NON MEMBER FUNCTION : Part of a pipeline of functions to conver
+t a TLS color to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+[]\T1/cmtt/m/n/10 Part of a pipeline of functions to convert a TLS color to a R
+GB one. The other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+\T1/cmtt/m/n/10 parts of the process are the tools_-couleursaturee and the tool
+s_-couleurfinale.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+\T1/cmtt/m/n/10 The whole process is given by the tools_-TLSto-RGB or the tools
+_-color-From-Value
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[]\T1/cmtt/m/n/10 This function modify the rslt color by taking in account the 
+L value of the TLS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]\T1/cmtt/m/n/10 : a color coded in a TLS format and stored in a Vector3D (\T1
+/cmr/m/n/10 p.\T1/cmtt/m/n/10 52[]). This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[]\T1/cmtt/m/n/10 (Vector3D (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10 52[])) Returns th
+e result of the cross product of the two vectors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\T1/cmtt/m/n/10 : color coded in a Vector3D (\T1/cmr/m/n/10 p.\T1/cmtt/m/n/10
+ 52[]) in a TLS format we want to
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 35.0982pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75]) [76]
+\openout2 = `trackball_8h.aux'.
+
+ (./trackball_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Underfull \hbox (badness 6364) in paragraph at lines 1--1
+\T1/cmr/bx/n/14.4 CPP/simple-mesh-library/inc/trackball.h File Ref-er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 Declaration de la classe Track-Ball (\T1/cmr/m/n/10 p.\T1/cmtt/
+m/n/10 45[]) qui gere une visualisation de type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\T1/cmtt/m/n/10 Declaration de la classe Track-Ball (\T1/cmr/m/n/10 p.\T1/cmtt/
+m/n/10 45[]) qui gere une visualisation de type
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 35.0982pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77
+
+
+]
+\openout2 = `vector3d_8h.aux'.
+
+ (./vector3d_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\T1/cmtt/m/n/10 Declaration de la classe Vector3D (\T1/cmr/m/n/10 p.\T1/cmtt/m/
+n/10 52[]). Cette classe representera des points
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\T1/cmtt/m/n/10 Declaration de la classe Vector3D (\T1/cmr/m/n/10 p.\T1/cmtt/m/
+n/10 52[]). Cette classe representera des points
+ []
+
+) [78
+
+
+]
+Chapter 7.
+(./todo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[]\T1/cmtt/m/n/10 Des ameliorations peuvent etre apportes a cette classe,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/cmtt/m/n/10 notamment des methodes-outils qui n'existent pas encore, l'ajou
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/cmtt/m/n/10 d'un attribut de type boumding box ainsi que les methodes qui v
+ont
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\T1/cmtt/m/n/10 avec (accesseurs/modificateurs, boite a outils, ...) le passage
+ des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[]\T1/cmtt/m/n/10 The loader should be rewritten to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\T1/cmtt/m/n/10 Ameliorer la trackball pour la rendre plus intuitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\T1/cmtt/m/n/10 (pour l'instant elle ne suis pas exactement les attentes de l'u
+tilisateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\T1/cmtt/m/n/10 Rajouter un operateur[] pour acceder a x,y et z
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\T1/cmtt/m/n/10 facilement : comme si le vector etait un tableau. Ca laisserait
+ plus de
+ []
+
+) (./refman.ind [79
+
+
+]
+Overfull \hbox (28.8992pt too wide) in paragraph at lines 3--5
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Overfull \hbox (26.90945pt too wide) in paragraph at lines 3--5
+\T1/cmtt/m/n/10 CPP/simple-mesh-library/inc/define.h,
+ []
+
+
+Overfull \hbox (28.8992pt too wide) in paragraph at lines 5--7
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Overfull \hbox (11.1633pt too wide) in paragraph at lines 5--7
+\T1/cmtt/m/n/10 CPP/simple-mesh-library/inc/map.h,
+ []
+
+
+Overfull \hbox (28.8992pt too wide) in paragraph at lines 7--9
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Overfull \hbox (16.41202pt too wide) in paragraph at lines 7--9
+\T1/cmtt/m/n/10 CPP/simple-mesh-library/inc/mesh.h,
+ []
+
+
+Overfull \hbox (28.8992pt too wide) in paragraph at lines 9--11
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Overfull \hbox (21.66074pt too wide) in paragraph at lines 9--11
+\T1/cmtt/m/n/10 CPP/simple-mesh-library/inc/tools.h,
+ []
+
+
+Overfull \hbox (28.8992pt too wide) in paragraph at lines 11--13
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Overfull \hbox (42.65561pt too wide) in paragraph at lines 11--13
+\T1/cmtt/m/n/10 CPP/simple-mesh-library/inc/trackball.h,
+ []
+
+
+Overfull \hbox (28.8992pt too wide) in paragraph at lines 13--15
+[]\T1/cmtt/m/n/10 /home/joris/Projets/Internship/Code/GMTOOLS_-
+ []
+
+
+Overfull \hbox (37.40689pt too wide) in paragraph at lines 13--15
+\T1/cmtt/m/n/10 CPP/simple-mesh-library/inc/vector3d.h,
+ []
+
+[80
+
+] [81] [82] [83] [84] [85
+
+]) (./refman.aux (./classFace.aux) (./classMap.aux) (./classMesh.aux) (./classT
+rackBall.aux) (./classVector3D.aux)
+(./classVertex.aux) (./map_8h.aux) (./mesh_8h.aux) (./tools_8h.aux)
+(./trackball_8h.aux) (./vector3d_8h.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2057 strings out of 94501
+ 33509 string characters out of 1176788
+ 77262 words of memory out of 1000000
+ 5117 multiletter control sequences out of 10000+50000
+ 16032 words of font info for 32 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 30i,12n,43p,569b,426s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on refman.dvi (89 pages, 160904 bytes).

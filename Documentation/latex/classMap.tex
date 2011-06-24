@@ -1,0 +1,351 @@
+\section{Map Class Reference}
+\label{classMap}\index{Map@{Map}}
+Classe repr\~{A}©sentant une carte de feature (double) attachee a un maillage.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Map} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+\bf{Map} (const \bf{Map} \&\_\-m)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+\bf{$\sim$Map} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+\bf{Map} \& \bf{operator=} (const \bf{Map} \&\_\-m)
+\begin{CompactList}\small\item\em Affectation operator of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+double \bf{get\-Min} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+double \bf{get\-Max} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+vector$<$ double $>$ \bf{get\-Data} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+double \bf{get\-IData} (int \_\-i)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+int \bf{get\-Size} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+void \bf{set\-Min} (double \_\-min)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+void \bf{set\-Max} (double \_\-max)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+void \bf{set\-Data} (vector$<$ double $>$ \_\-data)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+void \bf{set\-IData} (int \_\-i, double \_\-i\-Data)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Map}{p.}{classMap} class. \item\end{CompactList}\item 
+void \bf{clear} ()
+\begin{CompactList}\small\item\em Clears a map. \item\end{CompactList}\item 
+void \bf{expand} (int \_\-min=-50, int \_\-max=50)
+\begin{CompactList}\small\item\em Dynamic expansion of the map to a new set of range. \item\end{CompactList}\item 
+int \bf{load} (char $\ast$\_\-path)
+\begin{CompactList}\small\item\em Loads a map from a file and expand it. \item\end{CompactList}\item 
+int \bf{save} (char $\ast$\_\-path)
+\begin{CompactList}\small\item\em Saves a map into a file. \item\end{CompactList}\item 
+void \bf{segment} (int \_\-n=10)
+\begin{CompactList}\small\item\em Segments the map based on a value criteria. \item\end{CompactList}\item 
+void \bf{print\-Infos} ()
+\begin{CompactList}\small\item\em Prints some informations about the map in the terminal. \item\end{CompactList}\item 
+void \bf{print\-IData} (int \_\-i)
+\begin{CompactList}\small\item\em Prints the value of a particular element of the map. \item\end{CompactList}\item 
+void \bf{print\-Data} ()
+\begin{CompactList}\small\item\em Prints the value of each element of the map in the terminal. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+double \textbf{min}\label{classMap_b58a03a498a91550c3cf96266d895ffa}
+
+\item 
+double \bf{max}
+\item 
+vector$<$ double $>$ \bf{data}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant une carte de feature (double) attachee a un maillage. 
+
+Elle sera caracterisee par ses valeurs extreme et un tableau de donnees. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Map::Map ()}\label{classMap_97b341dadb8f9bde4404a1aaa8e12c63}
+
+
+Default constructor of the \doxyref{Map}{p.}{classMap} class. 
+
+Default constructor of the \doxyref{Map}{p.}{classMap} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Map::Map (const \bf{Map} \& {\em \_\-m})}\label{classMap_961942515c5c81a843bb8c7185c80efa}
+
+
+Copy constructor of the \doxyref{Map}{p.}{classMap} class. 
+
+Copy constructor of the \doxyref{Map}{p.}{classMap} class. \index{Map@{Map}!~Map@{$\sim$Map}}
+\index{~Map@{$\sim$Map}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Map::$\sim$Map ()}\label{classMap_465a358ee2921e27e50d19d2e10f9ad6}
+
+
+Destructor of the \doxyref{Map}{p.}{classMap} class. 
+
+Destructor of the \doxyref{Map}{p.}{classMap} class. 
+
+\subsection{Member Function Documentation}
+\index{Map@{Map}!clear@{clear}}
+\index{clear@{clear}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::clear ()}\label{classMap_e39ab8cbbacc88baa1c89373d7819f2b}
+
+
+Clears a map. 
+
+Clears a map : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...).
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!expand@{expand}}
+\index{expand@{expand}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::expand (int {\em \_\-min} = {\tt -50}, int {\em \_\-max} = {\tt 50})}\label{classMap_52322854eaf36125094ef1dcc32113d5}
+
+
+Dynamic expansion of the map to a new set of range. 
+
+Expands dynamically the map between two given values.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-min}]: Lowest value we want for the new map. Set to -50 by default. \item[{\em \_\-max}]: Highest value we want for the new map. Set to 50 by default.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!getData@{getData}}
+\index{getData@{getData}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Map::get\-Data ()}\label{classMap_eacbfca7b7752fe1531e22d2f1b4994b}
+
+
+Getter of the \doxyref{Map}{p.}{classMap} class. 
+
+Getter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$double$>$) returns an array of double containing every feature of the map. \end{Desc}
+\index{Map@{Map}!getIData@{getIData}}
+\index{getIData@{getIData}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Map::get\-IData (int {\em \_\-i})}\label{classMap_a5e879fe9580cf3b0e07dbe6c491a2a0}
+
+
+Getter of the \doxyref{Map}{p.}{classMap} class. 
+
+Getter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Returns:](double) returns the value of the ith feature in the map. \end{Desc}
+\index{Map@{Map}!getMax@{getMax}}
+\index{getMax@{getMax}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Map::get\-Max ()}\label{classMap_c0deaed190a59098d31aa88248fd4bfa}
+
+
+Getter of the \doxyref{Map}{p.}{classMap} class. 
+
+Getter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Returns:](double) returns the maximum value of the map. \end{Desc}
+\index{Map@{Map}!getMin@{getMin}}
+\index{getMin@{getMin}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Map::get\-Min ()}\label{classMap_23c1031ba365138e7c634cb952dfc842}
+
+
+Getter of the \doxyref{Map}{p.}{classMap} class. 
+
+Getter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Returns:](double) returns the minimum value of the map. \end{Desc}
+\index{Map@{Map}!getSize@{getSize}}
+\index{getSize@{getSize}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Map::get\-Size ()}\label{classMap_2cbc4be12de237d0bc5764c1c8d9db41}
+
+
+Getter of the \doxyref{Map}{p.}{classMap} class. 
+
+Getter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the number of values in the data array. \end{Desc}
+\index{Map@{Map}!load@{load}}
+\index{load@{load}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Map::load (char $\ast$ {\em \_\-path})}\label{classMap_de14427066cc53261048df9f3bf12618}
+
+
+Loads a map from a file and expand it. 
+
+Loads a map from a file AND expand this map between -50 to 50. A map stored in a file is stored as follw : For each vertex of the mesh, one value is printed in the file. So, usually there is one value per line in the file but the end-line-caracter can be suppressed and the values all printed in a single line. The map files should not content any comments.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-path}]: path to the file where the map is stored.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](int) Returns 1 if the operation succeded, -1 else. \end{Desc}
+\index{Map@{Map}!operator=@{operator=}}
+\index{operator=@{operator=}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Map}\& Map::operator= (const \bf{Map} \& {\em \_\-m})}\label{classMap_42f4031387e5e8b2dc4534dc601a8577}
+
+
+Affectation operator of the \doxyref{Map}{p.}{classMap} class. 
+
+Affectation operator of the \doxyref{Map}{p.}{classMap} class. \index{Map@{Map}!printData@{printData}}
+\index{printData@{printData}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::print\-Data ()}\label{classMap_f73a07cefa34885a9a3327b684e6e371}
+
+
+Prints the value of each element of the map in the terminal. 
+
+Prints the value of each element of the map in the terminal as follow : Number\-Of\-Element : Value\-Of\-Element
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!printIData@{printIData}}
+\index{printIData@{printIData}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::print\-IData (int {\em \_\-i})}\label{classMap_b31b4128cdef00b7902cb288b0432a08}
+
+
+Prints the value of a particular element of the map. 
+
+Prints the value of the ith element of the map as follow : Number\-Of\-Element : Value\-Of\-Element
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the element we want to print out.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!printInfos@{printInfos}}
+\index{printInfos@{printInfos}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::print\-Infos ()}\label{classMap_63b7309311d752f12f2d9f0ae2081db4}
+
+
+Prints some informations about the map in the terminal. 
+
+Prints some informations about the map in the terminal : The minimum and maximum value and also the number of elements in the map.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!save@{save}}
+\index{save@{save}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Map::save (char $\ast$ {\em \_\-path})}\label{classMap_677dbea0ae6020e93c0a28a3f7aa6321}
+
+
+Saves a map into a file. 
+
+Saves a map into a given file.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-path}]: path to the file where the map is going to be saved.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](int) Returns 1 if the operation succeded, -1 else. \end{Desc}
+\index{Map@{Map}!segment@{segment}}
+\index{segment@{segment}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::segment (int {\em \_\-n} = {\tt 10})}\label{classMap_901df1836c876619c12cbccb3bbf8167}
+
+
+Segments the map based on a value criteria. 
+
+Segments the map in n classes based on a value criteria : Each vertex value will be set to its class number. The class numbers are set according to the minimum and maximum value of the map and also the number of class we want to create : If the map values range is [0, 100] and we want to create 10 classes, then the vertex which value is 34 will be set to 30 and the vertex which value is 77 will be set to 70
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-n}]: number of classes we want to create in the map. Is set to 10 by default.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!setData@{setData}}
+\index{setData@{setData}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::set\-Data (vector$<$ double $>$ {\em \_\-data})}\label{classMap_7f53ef5df8b11fa3e738236c10131cf6}
+
+
+Setter of the \doxyref{Map}{p.}{classMap} class. 
+
+Setter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-data}]: array of values to set as the data of the map.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!setIData@{setIData}}
+\index{setIData@{setIData}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::set\-IData (int {\em \_\-i}, double {\em \_\-i\-Data})}\label{classMap_8c6b0e299ee97c1bb28431c9d714f9b0}
+
+
+Setter of the \doxyref{Map}{p.}{classMap} class. 
+
+Setter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i}]: index of the feature we want to set in the feature array of the map. \item[{\em \_\-i\-Data}]: value to set to the ith feature of the map.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!setMax@{setMax}}
+\index{setMax@{setMax}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::set\-Max (double {\em \_\-max})}\label{classMap_bd8a0e335478531262a95a534ab9d3da}
+
+
+Setter of the \doxyref{Map}{p.}{classMap} class. 
+
+Setter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-max}]: value to set as max of the map.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Map@{Map}!setMin@{setMin}}
+\index{setMin@{setMin}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Map::set\-Min (double {\em \_\-min})}\label{classMap_96c740c30498b2bc632a2af295b8ade9}
+
+
+Setter of the \doxyref{Map}{p.}{classMap} class. 
+
+Setter of the \doxyref{Map}{p.}{classMap} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-min}]: value to set as min of the map.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Map@{Map}!data@{data}}
+\index{data@{data}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Map::data\hspace{0.3cm}{\tt  [private]}}\label{classMap_1584bed0d3d48cc35689cb7cd9347478}
+
+
+$<$Value of the highest feature if the map. \index{Map@{Map}!max@{max}}
+\index{max@{max}!Map@{Map}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Map::max\hspace{0.3cm}{\tt  [private]}}\label{classMap_0295f380acc226a5ba3d556fde79d028}
+
+
+$<$Value of the lowest feature of the map. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/\bf{map.h}\end{CompactItemize}
