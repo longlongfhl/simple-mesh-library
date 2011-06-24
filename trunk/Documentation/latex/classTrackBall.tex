@@ -1,0 +1,332 @@
+\section{Track\-Ball Class Reference}
+\label{classTrackBall}\index{TrackBall@{TrackBall}}
+Classe repr\~{A}©sentant une trackball simpliste.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Track\-Ball} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+\bf{Track\-Ball} (const Track\-Ball \&\_\-t)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+\bf{$\sim$Track\-Ball} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+Track\-Ball \& \bf{operator=} (const Track\-Ball \&\_\-t)
+\begin{CompactList}\small\item\em Affectation operator of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+bool \bf{get\-State} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+double \bf{get\-Angle\-Y} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+double \bf{get\-Angle\-Z} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+int \bf{get\-Mouse\-X} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+int \bf{get\-Mouse\-Y} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+void \bf{set\-State} (bool \_\-s)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+void \bf{set\-Angle\-Y} (double \_\-y)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+void \bf{set\-Angle\-Z} (double \_\-z)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+void \bf{set\-Mouse\-X} (int \_\-x)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+void \bf{set\-Mouse\-Y} (int \_\-y)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \item\end{CompactList}\item 
+void \bf{display\-Begin\-GL\_\-GLUT} ()
+\begin{CompactList}\small\item\em Method that sets the Open\-GL environement to display a 3D scene with a trackball vizualisation. \item\end{CompactList}\item 
+void \bf{display\-End\-GL\_\-GLUT} ()
+\begin{CompactList}\small\item\em Method that sets the Open\-GL environement to display a 3D scene with a trackball vizualisation. \item\end{CompactList}\item 
+void \bf{mouse\-GL\_\-GLUT} (int \_\-attached\-Button, int \_\-mouse\-Button, int \_\-state, int \_\-x, int \_\-y)
+\begin{CompactList}\small\item\em Method managing the mouse GLUT events and sets the trackball parameters consequently. \item\end{CompactList}\item 
+void \bf{motion\-GL\_\-GLUT} (int \_\-x, int \_\-y)
+\begin{CompactList}\small\item\em Method managing the mouse motion GLUT events and sets the trackball parameters consequently. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+bool \textbf{state}\label{classTrackBall_418d04101a792bf744c221e0a363e198}
+
+\item 
+double \bf{angle\-Y}
+\item 
+double \bf{angle\-Z}
+\item 
+int \bf{mouse\-X}
+\item 
+int \bf{mouse\-Y}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant une trackball simpliste. 
+
+Classe repr\~{A}©sentant une trackball simpliste pour une visualisation user-friendly de la scene 3D. Une trackball de cette classe s'attache a un boutton particulier de la souris. L'activation de la trackball se fait par quatre methodes qui doivent etre placees a des endroits precis : \begin{itemize}
+\item {\tt display\-Begin()} : doit etre placee au debut du callback de dessin de la scene. \item {\tt display\-End()} : doit etre placee a la fin du callback de dessin de la scene. \item {\tt mouse\-GLUT}(...) : doit etre place dans le callback en charge des evenements souris. \item {\tt motion\-GLUT}(...) : doit etre place dans le callback en charge des evenements de deplacement de la souris.\end{itemize}
+\begin{Desc}
+\item[Warning:]THESE METHODS ARE BASED ON THE GL AND GLUT LIBRARIES. 
+
+IF YOU USE SOME OTHERS LIBRARIES FOR YOUR SOFTWARE, PLEASE WRITE YOUR OWN display/mouse/motion METHODS WITH THE GRAPHIC LIBRARY USED AND THE WINDOW MANAGEMENT LIBRARY NAMES IN SUFFIXE. 
+
+THEN LET US KNOW YOUR NEW METHOD. 
+
+EXAMPLE : display\-Begin\-GL\_\-GTK(), display\-End\-GL\_\-GTK(), ... IF YOU ARE USING OPENGL AS YOUR GRAPHIC LIBRARY AND GTK AS YOUR WINDOW MANAGEMENT LIBRARY. 
+
+THANK YOU.\end{Desc}
+Cette trackball a vocation a etre amelioree/reecrite puisqu'elle ne suit pas exactement les attentes de l'utilisateur. Toutefois elle permet une manipulation simiple et rapide du point de vue de la scene 3D.
+
+\begin{Desc}
+\item[\bf{Todo}]Ameliorer la trackball pour la rendre plus intuitive (pour l'instant elle ne suis pas exactement les attentes de l'utilisateur mais a le merite d'exister).\end{Desc}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{TrackBall@{Track\-Ball}!TrackBall@{TrackBall}}
+\index{TrackBall@{TrackBall}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Track\-Ball::Track\-Ball ()}\label{classTrackBall_4021a97f151e42d33684417f472fee1d}
+
+
+Default constructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Default constructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{TrackBall@{Track\-Ball}!TrackBall@{TrackBall}}
+\index{TrackBall@{TrackBall}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Track\-Ball::Track\-Ball (const Track\-Ball \& {\em \_\-t})}\label{classTrackBall_676a798959fe4a99b22fe2fa59496612}
+
+
+Copy constructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Copy constructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \index{TrackBall@{Track\-Ball}!~TrackBall@{$\sim$TrackBall}}
+\index{~TrackBall@{$\sim$TrackBall}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Track\-Ball::$\sim$Track\-Ball ()}\label{classTrackBall_809649041a69bbe88cdac3917d820ead}
+
+
+Destructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Destructor of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+\subsection{Member Function Documentation}
+\index{TrackBall@{Track\-Ball}!displayBeginGL_GLUT@{displayBeginGL\_\-GLUT}}
+\index{displayBeginGL_GLUT@{displayBeginGL\_\-GLUT}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::display\-Begin\-GL\_\-GLUT ()}\label{classTrackBall_51ac8aa3dd06b7ad57061f69d5dc968a}
+
+
+Method that sets the Open\-GL environement to display a 3D scene with a trackball vizualisation. 
+
+Method that sets the Open\-GL environement to display a 3D scene with a trackball vizualisation. \begin{Desc}
+\item[Warning:]This method has to be placed at the first line (after the color buffer clearing) of the GLUT display callback func.\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!displayEndGL_GLUT@{displayEndGL\_\-GLUT}}
+\index{displayEndGL_GLUT@{displayEndGL\_\-GLUT}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::display\-End\-GL\_\-GLUT ()}\label{classTrackBall_4d9245671df5e9c8f6f0e70370136e7b}
+
+
+Method that sets the Open\-GL environement to display a 3D scene with a trackball vizualisation. 
+
+Method that sets the Open\-GL environement to display a 3D scene with a trackball vizualisation. \begin{Desc}
+\item[Warning:]This method has to be placed at the last line (before the flushing buffers line) of the GLUT display callback func.\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!getAngleY@{getAngleY}}
+\index{getAngleY@{getAngleY}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Track\-Ball::get\-Angle\-Y ()}\label{classTrackBall_2e3d6e50124f32cf979aa27c7821bbf6}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Returns:](double) Returns the trackball angle on the Oy axe. \end{Desc}
+\index{TrackBall@{Track\-Ball}!getAngleZ@{getAngleZ}}
+\index{getAngleZ@{getAngleZ}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Track\-Ball::get\-Angle\-Z ()}\label{classTrackBall_ecc8606b3ec07045aed898f30db23b04}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Returns:](double) Returns the trackball angle on the Oz axe. \end{Desc}
+\index{TrackBall@{Track\-Ball}!getMouseX@{getMouseX}}
+\index{getMouseX@{getMouseX}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Track\-Ball::get\-Mouse\-X ()}\label{classTrackBall_dc0d28f6940c3b6631c62a121c7d249a}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Returns:](int) Returns the trackball old mouse cursor's positions on the window Ox axe. \end{Desc}
+\index{TrackBall@{Track\-Ball}!getMouseY@{getMouseY}}
+\index{getMouseY@{getMouseY}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Track\-Ball::get\-Mouse\-Y ()}\label{classTrackBall_edefce6a33d00c0a4d7741b38aa0f93e}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Returns:](int) Returns the trackball old mouse cursor's positions on the window Oy axe. \end{Desc}
+\index{TrackBall@{Track\-Ball}!getState@{getState}}
+\index{getState@{getState}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Track\-Ball::get\-State ()}\label{classTrackBall_e51e0335f04ebe91bd8b507d3430c8f8}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Returns:](bool) Returns the trackball state. \end{Desc}
+\index{TrackBall@{Track\-Ball}!motionGL_GLUT@{motionGL\_\-GLUT}}
+\index{motionGL_GLUT@{motionGL\_\-GLUT}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::motion\-GL\_\-GLUT (int {\em \_\-x}, int {\em \_\-y})}\label{classTrackBall_652fae1822cce85a39807b0bd2abfdbc}
+
+
+Method managing the mouse motion GLUT events and sets the trackball parameters consequently. 
+
+Method managing the mouse motion GLUT events and sets the trackball parameters consequently. \begin{Desc}
+\item[Warning:]This method has to be placed in the GLUT mouse motion callback func.\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-x}]: The position of the mouse cursor along the Ox window axe when the callback has been called. \item[{\em \_\-y}]: The position of the mouse cursor along the Oy window when the callback has been called.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!mouseGL_GLUT@{mouseGL\_\-GLUT}}
+\index{mouseGL_GLUT@{mouseGL\_\-GLUT}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::mouse\-GL\_\-GLUT (int {\em \_\-attached\-Button}, int {\em \_\-mouse\-Button}, int {\em \_\-state}, int {\em \_\-x}, int {\em \_\-y})}\label{classTrackBall_f02bcc17d7c6f0f99b8224afab553677}
+
+
+Method managing the mouse GLUT events and sets the trackball parameters consequently. 
+
+Method managing the mouse GLUT events and sets the trackball parameters consequently. \begin{Desc}
+\item[Warning:]This method has to be placed in the GLUT mouse callback func.\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-attached\-Button}]: Button the user wants to attach the trackball activation. Can be set to : GLUT\_\-LEFT\_\-BUTTON, GLUT\_\-MIDDLE\_\-BUTTON or GLUT\_\-RIGHT\_\-BUTTON. \item[{\em \_\-mouse\-Button}]: The mouse button that called back the callback. \item[{\em \_\-x}]: The position of the mouse cursor along the Ox window axe when the callback has been called. \item[{\em \_\-y}]: The position of the mouse cursor along the Oy window when the callback has been called.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!operator=@{operator=}}
+\index{operator=@{operator=}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Track\-Ball\& Track\-Ball::operator= (const Track\-Ball \& {\em \_\-t})}\label{classTrackBall_d91f67ec0a0d02878c6c1cb4d43517a5}
+
+
+Affectation operator of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Affectation operator of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. \index{TrackBall@{Track\-Ball}!setAngleY@{setAngleY}}
+\index{setAngleY@{setAngleY}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::set\-Angle\-Y (double {\em \_\-y})}\label{classTrackBall_4a8b06cd0689350a453feb73f6036375}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-y}]: Angle on the Oy axe to attribute to the trackball.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!setAngleZ@{setAngleZ}}
+\index{setAngleZ@{setAngleZ}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::set\-Angle\-Z (double {\em \_\-z})}\label{classTrackBall_9216510ebc5ef041b94c94eb773c2e77}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-z}]: Angle on the Oz to attribute to the trackball.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!setMouseX@{setMouseX}}
+\index{setMouseX@{setMouseX}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::set\-Mouse\-X (int {\em \_\-x})}\label{classTrackBall_86b50a3b43a70a9e835a77493fdcef49}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-x}]: Old cursor's position along the Ox window axe to attribute to the trackball.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!setMouseY@{setMouseY}}
+\index{setMouseY@{setMouseY}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::set\-Mouse\-Y (int {\em \_\-y})}\label{classTrackBall_0372c790cff842d57768b6881a21340f}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-y}]: Old cursor's position along the Oy window axe to attribute to the trackball.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{TrackBall@{Track\-Ball}!setState@{setState}}
+\index{setState@{setState}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Track\-Ball::set\-State (bool {\em \_\-s})}\label{classTrackBall_92143793033f1e0c277318b7bb2c1033}
+
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class. 
+
+Getter of the \doxyref{Track\-Ball}{p.}{classTrackBall} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-s}]: State to attribute to the trackball.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{TrackBall@{Track\-Ball}!angleY@{angleY}}
+\index{angleY@{angleY}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Track\-Ball::angle\-Y\hspace{0.3cm}{\tt  [private]}}\label{classTrackBall_2024d743f64680044b2986611532c2e9}
+
+
+$<$State of the trackball : ON (true) or OFF (false) wether the attached button is down or not. \index{TrackBall@{Track\-Ball}!angleZ@{angleZ}}
+\index{angleZ@{angleZ}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Track\-Ball::angle\-Z\hspace{0.3cm}{\tt  [private]}}\label{classTrackBall_cde64c26e5857d184f4ddac1560e92c9}
+
+
+$<$Angle on th Oy axe to rotate the scene. \index{TrackBall@{Track\-Ball}!mouseX@{mouseX}}
+\index{mouseX@{mouseX}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Track\-Ball::mouse\-X\hspace{0.3cm}{\tt  [private]}}\label{classTrackBall_7f17a45c4bed0fc3c42515c4af058d43}
+
+
+$<$Angle on th Oz axe to rotate the scene. \index{TrackBall@{Track\-Ball}!mouseY@{mouseY}}
+\index{mouseY@{mouseY}!TrackBall@{Track\-Ball}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Track\-Ball::mouse\-Y\hspace{0.3cm}{\tt  [private]}}\label{classTrackBall_832aa1a0a1fe4f6e9b634317be597db1}
+
+
+$<$Last position of the mouse cursor in the Ox window axe. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/\bf{trackball.h}\end{CompactItemize}

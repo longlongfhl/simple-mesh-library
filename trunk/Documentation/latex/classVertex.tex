@@ -1,0 +1,470 @@
+\section{Vertex Class Reference}
+\label{classVertex}\index{Vertex@{Vertex}}
+Classe repr\~{A}©sentant un \doxyref{Vertex}{p.}{classVertex}, soit, un point supportant un maillage.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Vertex} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Vertex} (const \bf{Vertex} \&\_\-v)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Vertex} (int \_\-ID, \bf{Vector3D} \_\-pos)
+\begin{CompactList}\small\item\em Ovrloaded constructor of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{$\sim$Vertex} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Vertex} \& \bf{operator=} (const \bf{Vertex} \&\_\-v)
+\begin{CompactList}\small\item\em Affectation operator of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+int \bf{get\-ID} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{get\-Pos} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+double $\ast$ \bf{get\-Pos\-Array} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{get\-Color} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+double $\ast$ \bf{get\-Color\-Array} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{get\-Normal} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+double $\ast$ \bf{get\-Normal\-Array} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+vector$<$ \bf{Edge} $\ast$ $>$ \bf{get\-Edges} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+\bf{Edge} $\ast$ \bf{get\-IEdge} (int \_\-i)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{print\-ID} ()
+\begin{CompactList}\small\item\em Prints the ID of the vertex in the terminal. \item\end{CompactList}\item 
+void \bf{print\-Pos} ()
+\begin{CompactList}\small\item\em Prints the position of the vertex in the terminal. \item\end{CompactList}\item 
+void \bf{print\-Normal} ()
+\begin{CompactList}\small\item\em Prints the normal of the vertex in the terminal. \item\end{CompactList}\item 
+void \bf{print\-Color} ()
+\begin{CompactList}\small\item\em Prints the Color of the vertex in the terminal. \item\end{CompactList}\item 
+void \bf{print} ()
+\begin{CompactList}\small\item\em Prints informations about the vertex in the terminal. \item\end{CompactList}\item 
+void \bf{set\-ID} (int \_\-ID)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Pos} (\bf{Vector3D} \_\-pos)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Pos} (double $\ast$\_\-pos)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Normal} (\bf{Vector3D} \_\-normal)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Normal} (double $\ast$\_\-normal)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Color} (\bf{Vector3D} \_\-color)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Color} (double $\ast$\_\-color)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+void \bf{set\-Edges} (vector$<$ \bf{Edge} $\ast$ $>$ \_\-edges)
+\begin{CompactList}\small\item\em Setter of the \doxyref{Vertex}{p.}{classVertex} class. \item\end{CompactList}\item 
+int \bf{contains\-Edge} (int \_\-i\-Tail, int \_\-i\-Head)
+\begin{CompactList}\small\item\em Check for the existing of an edge in the edge vector of a vertex. \item\end{CompactList}\item 
+void \bf{add\-Edge} (\bf{Edge} $\ast$\_\-e)
+\begin{CompactList}\small\item\em Adds an edge to the edge vector of the vertex. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int \textbf{id}\label{classVertex_0206a3091ebeca387a70cef4b2eb6a70}
+
+\item 
+\bf{Vector3D} \bf{pos}
+\item 
+\bf{Vector3D} \bf{color}
+\item 
+\bf{Vector3D} \bf{normal}
+\item 
+vector$<$ \bf{Edge} $\ast$ $>$ \bf{edges}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant un \doxyref{Vertex}{p.}{classVertex}, soit, un point supportant un maillage. 
+
+Un vertex est represente par ses elements les plus courant, a savoir : sa position dans l'espace, un numero d'identification, un vecteur normal, et une couleur. Les informations de voisinnage s'obtiennent a l'aide d'une liste d'arretes (demi-aretes) qui partent de ce vertex. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vertex::Vertex ()}\label{classVertex_ee7844c3dea03ae12de23df1e8a9ad49}
+
+
+Default constructor of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Default constructor of the \doxyref{Vertex}{p.}{classVertex} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vertex::Vertex (const \bf{Vertex} \& {\em \_\-v})}\label{classVertex_7b8a3e53f202af4f50afadfaf5b827ba}
+
+
+Copy constructor of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Copy constructor of the \doxyref{Vertex}{p.}{classVertex} class. \index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vertex::Vertex (int {\em \_\-ID}, \bf{Vector3D} {\em \_\-pos})}\label{classVertex_b836bc95f6d292b0b6c0b4bd85e7783d}
+
+
+Ovrloaded constructor of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Overloaded constructor of the \doxyref{Vertex}{p.}{classVertex} class : fill the id of the vertex and its location in space. \index{Vertex@{Vertex}!~Vertex@{$\sim$Vertex}}
+\index{~Vertex@{$\sim$Vertex}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vertex::$\sim$Vertex ()}\label{classVertex_5bef863d5861285cbdbe9a1d72bc5ab6}
+
+
+Destructor of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Destructor of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+\subsection{Member Function Documentation}
+\index{Vertex@{Vertex}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::add\-Edge (\bf{Edge} $\ast$ {\em \_\-e})}\label{classVertex_9bb2bfca191c37425bbc2cef8fbba472}
+
+
+Adds an edge to the edge vector of the vertex. 
+
+Adds an edge to the edge vector of the vertex.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-e}]: pointer on the edge we want to add.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!containsEdge@{containsEdge}}
+\index{containsEdge@{containsEdge}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Vertex::contains\-Edge (int {\em \_\-i\-Tail}, int {\em \_\-i\-Head})}\label{classVertex_9592dc9475f7185dff063430ada2c0c0}
+
+
+Check for the existing of an edge in the edge vector of a vertex. 
+
+Check for the existing of an edge in the edge vector of a vertex given the two vertices representing the edge.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-i\-Tail}]: index of the tail vertex of the edge. \item[{\em \_\-i\-Head}]: index of the head vertex of the edge.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](int) Returns the index of the edge if the vertex contains the edge given by the two vertices of index \_\-i\-Tail (for the tail vertex) and \_\-i\-Head (for the head vertex). Returns -1 else. \end{Desc}
+\index{Vertex@{Vertex}!getColor@{getColor}}
+\index{getColor@{getColor}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Vertex::get\-Color ()}\label{classVertex_bb6af08bc5f8ec381509a3e92f1b5d83}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) returns the color of the vertex in space. \end{Desc}
+\index{Vertex@{Vertex}!getColorArray@{getColorArray}}
+\index{getColorArray@{getColorArray}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Vertex::get\-Color\-Array ()}\label{classVertex_32a00c961544e37b5cf9d4a787a49c21}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](double$\ast$) returns the color of the vertex in space as an array of three frames. \end{Desc}
+\index{Vertex@{Vertex}!getEdges@{getEdges}}
+\index{getEdges@{getEdges}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Edge}$\ast$$>$ Vertex::get\-Edges ()}\label{classVertex_b3982a2a669301698dba56929076524a}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](vector$<$Edge$\ast$$>$) returns a vector containing all the edges which tail is the vertex. \end{Desc}
+\index{Vertex@{Vertex}!getID@{getID}}
+\index{getID@{getID}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Vertex::get\-ID ()}\label{classVertex_480baf16698da2a8a14a122e05eb99a9}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the ID of the vertex. \end{Desc}
+\index{Vertex@{Vertex}!getIEdge@{getIEdge}}
+\index{getIEdge@{getIEdge}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Edge}$\ast$ Vertex::get\-IEdge (int {\em \_\-i})}\label{classVertex_172159b2733f221a9fe36de3e1a8035b}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](Edge$\ast$) returns a pointer on the ith edge of the edge vector. \end{Desc}
+\index{Vertex@{Vertex}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Vertex::get\-Normal ()}\label{classVertex_a05b3f5606c99f5c7e54a02d4e8caaad}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) returns the normal of the vertex in space. \end{Desc}
+\index{Vertex@{Vertex}!getNormalArray@{getNormalArray}}
+\index{getNormalArray@{getNormalArray}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Vertex::get\-Normal\-Array ()}\label{classVertex_48eec5e992535e8d89db7939607e0231}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](double$\ast$) returns the normal of the vertex in spaceas an array of three frames. \end{Desc}
+\index{Vertex@{Vertex}!getPos@{getPos}}
+\index{getPos@{getPos}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Vertex::get\-Pos ()}\label{classVertex_29bcc584ae2f111bdebf84c4512a30a9}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](\doxyref{Vector3D}{p.}{classVector3D}) returns the location of the vertex in space. \end{Desc}
+\index{Vertex@{Vertex}!getPosArray@{getPosArray}}
+\index{getPosArray@{getPosArray}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Vertex::get\-Pos\-Array ()}\label{classVertex_43e4858b4baa5dfa4efc9ab857957231}
+
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Getter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Returns:](double$\ast$) returns the location of the vertex in space as an array of three frames. \end{Desc}
+\index{Vertex@{Vertex}!operator=@{operator=}}
+\index{operator=@{operator=}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vertex}\& Vertex::operator= (const \bf{Vertex} \& {\em \_\-v})}\label{classVertex_3642efef505fc5c8e1d9d015beafd98e}
+
+
+Affectation operator of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Affectation operator of the \doxyref{Vertex}{p.}{classVertex} class. \index{Vertex@{Vertex}!print@{print}}
+\index{print@{print}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::print ()}\label{classVertex_1fbced7072fa8ff6ca5f903fb3e918d7}
+
+
+Prints informations about the vertex in the terminal. 
+
+Prints informations about the vertex in the terminal : id, position, normal, color;
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!printColor@{printColor}}
+\index{printColor@{printColor}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::print\-Color ()}\label{classVertex_f959fa993e3bcca05d3acbd954d4a692}
+
+
+Prints the Color of the vertex in the terminal. 
+
+Prints the color of the vertex in the terminal as follow : \char`\"{}Color [ x, y, z ]$\backslash$n\char`\"{}.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!printID@{printID}}
+\index{printID@{printID}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::print\-ID ()}\label{classVertex_f0012e157d2adb0294b35f7c872e97b5}
+
+
+Prints the ID of the vertex in the terminal. 
+
+Prints the ID of the vertex in the terminal as follow : \char`\"{}position [ x, y, z ]$\backslash$n\char`\"{}.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!printNormal@{printNormal}}
+\index{printNormal@{printNormal}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::print\-Normal ()}\label{classVertex_f511b957ce22f77f469f023106209ea8}
+
+
+Prints the normal of the vertex in the terminal. 
+
+Prints the normal of the vertex in the terminal as follow : \char`\"{}Normal [ x, y, z ]$\backslash$n\char`\"{}.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!printPos@{printPos}}
+\index{printPos@{printPos}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::print\-Pos ()}\label{classVertex_2e58ab5de6416edd9724758a45071206}
+
+
+Prints the position of the vertex in the terminal. 
+
+Prints the Position of the vertex in the terminal as follow : \char`\"{}position [ x, y, z ]$\backslash$n\char`\"{}.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setColor@{setColor}}
+\index{setColor@{setColor}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Color (double $\ast$ {\em \_\-color})}\label{classVertex_482a6608b8ebcdce97f9c797fce94f8f}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class, this one is written to have a double array in parameter and not a \doxyref{Vector3D}{p.}{classVector3D}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-color}]: color to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setColor@{setColor}}
+\index{setColor@{setColor}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Color (\bf{Vector3D} {\em \_\-color})}\label{classVertex_519a2a39841aa5eefef1182c86bb97b3}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-color}]: color to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setEdges@{setEdges}}
+\index{setEdges@{setEdges}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Edges (vector$<$ \bf{Edge} $\ast$ $>$ {\em \_\-edges})}\label{classVertex_37d52c03a14ec5ec5d1cecddf3bdf137}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-edges}]: vector of edges to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setID@{setID}}
+\index{setID@{setID}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-ID (int {\em \_\-ID})}\label{classVertex_963fe86070b71c2efef256d99d2ad0fc}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-ID}]: value to affect to the id attribute of the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setNormal@{setNormal}}
+\index{setNormal@{setNormal}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Normal (double $\ast$ {\em \_\-normal})}\label{classVertex_50055312bdd85bb1d2bc7d5be50d3653}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class, this one is written to have a double array in parameter and not a \doxyref{Vector3D}{p.}{classVector3D}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-normal}]: normal to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setNormal@{setNormal}}
+\index{setNormal@{setNormal}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Normal (\bf{Vector3D} {\em \_\-normal})}\label{classVertex_f3947e1700f805e779af92941190ea2c}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-normal}]: normal to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setPos@{setPos}}
+\index{setPos@{setPos}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Pos (double $\ast$ {\em \_\-pos})}\label{classVertex_766bb8605d4e4103d5094111e3fc1c89}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class, this one is written to have a double array in parameter and not a \doxyref{Vector3D}{p.}{classVector3D}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-pos}]: position to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Vertex@{Vertex}!setPos@{setPos}}
+\index{setPos@{setPos}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vertex::set\-Pos (\bf{Vector3D} {\em \_\-pos})}\label{classVertex_2c1a47c21c861fe71fca6112664adc29}
+
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class. 
+
+Setter of the \doxyref{Vertex}{p.}{classVertex} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-pos}]: position to affect to the vertex.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Vertex@{Vertex}!color@{color}}
+\index{color@{color}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Vertex::color\hspace{0.3cm}{\tt  [private]}}\label{classVertex_5b66f6c177e1babbb24abb9c19957966}
+
+
+$<$Location in space of the vertex. \index{Vertex@{Vertex}!edges@{edges}}
+\index{edges@{edges}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$\bf{Edge}$\ast$$>$ Vertex::edges\hspace{0.3cm}{\tt  [private]}}\label{classVertex_2851b50a1b83f6ce9303029fee811931}
+
+
+$<$Normal vector at the vertex. \index{Vertex@{Vertex}!normal@{normal}}
+\index{normal@{normal}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Vertex::normal\hspace{0.3cm}{\tt  [private]}}\label{classVertex_0afb8f4babb3532fc67149f8b5e948f4}
+
+
+$<$Color of the vertex. \index{Vertex@{Vertex}!pos@{pos}}
+\index{pos@{pos}!Vertex@{Vertex}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Vertex::pos\hspace{0.3cm}{\tt  [private]}}\label{classVertex_a70e7463a672fa255d036bef19fe00ab}
+
+
+$<$ID of the vertex. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/\bf{define.h}\end{CompactItemize}

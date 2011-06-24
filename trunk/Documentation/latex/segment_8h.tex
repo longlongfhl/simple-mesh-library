@@ -1,0 +1,44 @@
+\section{/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/segment.h File Reference}
+\label{segment_8h}\index{/home/joris/Projets/Internship/Code/GMTOOLS_CPP/simple-mesh-library/inc/segment.h@{/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/segment.h}}
+Declaration de la classe \doxyref{Segment}{p.}{classSegment} representant un ensemble connexe de vertex dans un maillage appartenants a la meme classe de segmentation (voir la classe. 
+
+{\tt \#include \char`\"{}mesh.h\char`\"{}}\par
+{\tt \#include $<$list$>$}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{Segment}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \bf{EQUAL}~0
+\item 
+\#define \bf{GREATER\_\-EQUAL}~1
+\item 
+\#define \bf{LESSER\_\-EQUAL}~2
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration de la classe \doxyref{Segment}{p.}{classSegment} representant un ensemble connexe de vertex dans un maillage appartenants a la meme classe de segmentation (voir la classe. 
+
+
+
+\subsection{Define Documentation}
+\index{segment.h@{segment.h}!EQUAL@{EQUAL}}
+\index{EQUAL@{EQUAL}!segment.h@{segment.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define EQUAL~0}\label{segment_8h_2f4b7bf066f7a2c79c0ce324e05962f4}
+
+
+criteria of creation of a \doxyref{Segment}{p.}{classSegment} : all neighbours with the same map value will constitute the segment. \index{segment.h@{segment.h}!GREATER_EQUAL@{GREATER\_\-EQUAL}}
+\index{GREATER_EQUAL@{GREATER\_\-EQUAL}!segment.h@{segment.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define GREATER\_\-EQUAL~1}\label{segment_8h_517c130fe4038b027475a20b0caa1e05}
+
+
+criteria of creation of a \doxyref{Segment}{p.}{classSegment} : all neighbours with a value equal or greater than the seed vertex value will constitute the segment. \index{segment.h@{segment.h}!LESSER_EQUAL@{LESSER\_\-EQUAL}}
+\index{LESSER_EQUAL@{LESSER\_\-EQUAL}!segment.h@{segment.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define LESSER\_\-EQUAL~2}\label{segment_8h_9d939dcd54dd4c08669a88fe7f7c0776}
+
+
+criteria of creation of a \doxyref{Segment}{p.}{classSegment} : all neighbours with a value equal or lesser than the seed vertex value will constitute the segment. 

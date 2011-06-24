@@ -1,0 +1,484 @@
+\section{Segment Class Reference}
+\label{classSegment}\index{Segment@{Segment}}
+Classe repr\~{A}©sentant une zone connexe d'un maillage dont tous les vertex partagent une propriete vis-a-vis de leur valeur dans une map.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\bf{Segment} ()
+\begin{CompactList}\small\item\em Default constructor of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+\bf{Segment} (const \bf{Segment} \&\_\-s)
+\begin{CompactList}\small\item\em Copy constructor of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+\bf{$\sim$Segment} ()
+\begin{CompactList}\small\item\em Destructor of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+\bf{Segment} \& \bf{operator=} (const \bf{Segment} \&\_\-s)
+\begin{CompactList}\small\item\em Affectation operator of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+int \bf{get\-ID} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+double \bf{get\-Depth} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+\bf{Vector3D} \bf{get\-Color} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+double $\ast$ \bf{get\-Color\-Array} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+list$<$ \bf{Vertex} $\ast$ $>$ \bf{get\-Verts} ()
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+void \bf{set\-ID} (int \_\-ID)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+void \bf{set\-Depth} (double \_\-depth)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+void \bf{set\-Color} (\bf{Vector3D} \_\-color)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+void \bf{set\-Verts} (list$<$ \bf{Vertex} $\ast$ $>$ \_\-v)
+\begin{CompactList}\small\item\em Getter of the \doxyref{Segment}{p.}{classSegment} class. \item\end{CompactList}\item 
+void \bf{add\-Vert} (\bf{Vertex} $\ast$\_\-v)
+\begin{CompactList}\small\item\em Adds a vertex to the \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{create\-From\-Seed\_\-Eq} (\bf{Vertex} $\ast$\_\-seed, \bf{Mesh} \_\-mesh, \bf{Map} \_\-map)
+\begin{CompactList}\small\item\em Creates a segment within the \char`\"{}equal value\char`\"{} criteria. \item\end{CompactList}\item 
+void \bf{create\-From\-Seed\_\-Gr\-Eq} (\bf{Vertex} $\ast$\_\-seed, \bf{Mesh} \_\-mesh, \bf{Map} \_\-map)
+\begin{CompactList}\small\item\em Creates a segment within the \char`\"{}Greater or equal value\char`\"{} criteria. \item\end{CompactList}\item 
+void \bf{create\-From\-Seed\_\-Le\-Eq} (\bf{Vertex} $\ast$\_\-seed, \bf{Mesh} \_\-mesh, \bf{Map} \_\-map)
+\begin{CompactList}\small\item\em Creates a segment within the \char`\"{}Lesser or equal value\char`\"{} criteria. \item\end{CompactList}\item 
+void \bf{create\-From\-Seed} (int \_\-criteria, \bf{Vertex} $\ast$\_\-seed, \bf{Mesh} \_\-mesh, \bf{Map} \_\-map)
+\begin{CompactList}\small\item\em Creates a segment within a specific criteria. \item\end{CompactList}\item 
+bool \bf{contains} (\bf{Vertex} $\ast$\_\-v)
+\begin{CompactList}\small\item\em Notice whether or not a vertex is contained in the segment. \item\end{CompactList}\item 
+void \bf{display\-Vertices} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Displays the vertices contained in a \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{display\-Vertices} ()
+\begin{CompactList}\small\item\em Displays the vertices contained in a \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{display\-Edges} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Displays the edges contained in a \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{display\-Edges} ()
+\begin{CompactList}\small\item\em Displays the edges contained in a \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{display\-Faces} (float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Displays the faces contained in a \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{display\-Faces} ()
+\begin{CompactList}\small\item\em Displays the faces contained in a \doxyref{Segment}{p.}{classSegment}. \item\end{CompactList}\item 
+void \bf{display} (int \_\-mode, float \_\-r, float \_\-g, float \_\-b)
+\begin{CompactList}\small\item\em Displays the \doxyref{Segment}{p.}{classSegment} in a selected mode. \item\end{CompactList}\item 
+void \bf{display} (int \_\-mode=FACES)
+\begin{CompactList}\small\item\em Displays the \doxyref{Segment}{p.}{classSegment} in a selected mode. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int \textbf{id}\label{classSegment_c4248996082da9631f035b37f855e5ee}
+
+\item 
+double \bf{depth}
+\item 
+\bf{Vector3D} \bf{color}
+\item 
+list$<$ \bf{Vertex} $\ast$ $>$ \bf{verts}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Classe repr\~{A}©sentant une zone connexe d'un maillage dont tous les vertex partagent une propriete vis-a-vis de leur valeur dans une map. 
+
+Classe repr\~{A}©sentant une zone connexe d'un maillage dont tous les vertex partagent une propriete vis-a-vis de leur valeur dans une map : Exemples :\begin{itemize}
+\item tous les vertex de la zone ont une valeur inferieure a un seuil.\item tous les vertex de la zone ont la meme valeur.\item ...\end{itemize}
+
+
+The creation of a segment is usually defined by a criteria AND a specific vertex on a given mesh we will call the \char`\"{}seed\char`\"{}.
+
+Des methodes peuvent etre ajoutees pour creer des segments selon d'autres proprietes que celles presntes. D'autres critere de reation de zone peuvent aussi etre ajoutes par la suite selon les besoins des utilisateurs. Exemples :\begin{itemize}
+\item Un vertex appartient au segment si la distance euclidienne entre lui et le segment est plus petite qu'un seuil. Ce qui engendrerait une zone a l'interieur de laquelle tous les vertex seraient proches les uns des autres (selon le seuil).\item Idem selon des criteres d'aires, de couleur, de deplacements...\item ... \end{itemize}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Segment@{Segment}!Segment@{Segment}}
+\index{Segment@{Segment}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Segment::Segment ()}\label{classSegment_a4c8ae1df16e7d2447d351ce4c778b86}
+
+
+Default constructor of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Default constructor of the \doxyref{Segment}{p.}{classSegment} class : Every attributes are initialized to 0 (int,float,double,...) NULL (pointers) or are cleared (lists, stacks, ...). \index{Segment@{Segment}!Segment@{Segment}}
+\index{Segment@{Segment}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Segment::Segment (const \bf{Segment} \& {\em \_\-s})}\label{classSegment_7531b2772f81f5145013e93dc9a1a6b6}
+
+
+Copy constructor of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Copy constructor of the \doxyref{Segment}{p.}{classSegment} class. \index{Segment@{Segment}!~Segment@{$\sim$Segment}}
+\index{~Segment@{$\sim$Segment}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Segment::$\sim$Segment ()}\label{classSegment_ed96ece603df464c16f63f463b82d16e}
+
+
+Destructor of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Destructor of the \doxyref{Segment}{p.}{classSegment} class. 
+
+\subsection{Member Function Documentation}
+\index{Segment@{Segment}!addVert@{addVert}}
+\index{addVert@{addVert}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::add\-Vert (\bf{Vertex} $\ast$ {\em \_\-v})}\label{classSegment_9075b6b659e65c380cfb61e6c3a3fb5d}
+
+
+Adds a vertex to the \doxyref{Segment}{p.}{classSegment}. 
+
+Adds a vertex to the \doxyref{Segment}{p.}{classSegment}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-v}]: \doxyref{Vertex}{p.}{classVertex} to add to the segment.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!contains@{contains}}
+\index{contains@{contains}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Segment::contains (\bf{Vertex} $\ast$ {\em \_\-v})}\label{classSegment_4b9b69cf3220c042e7d5b676b8692e6f}
+
+
+Notice whether or not a vertex is contained in the segment. 
+
+Notice whether or not a given vertex is contained in the segment.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-v}]: \doxyref{Vertex}{p.}{classVertex} we want to know if it is contained in the \doxyref{Segment}{p.}{classSegment}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](bool) Return true if the segment contains \_\-v, false else. \end{Desc}
+\index{Segment@{Segment}!createFromSeed@{createFromSeed}}
+\index{createFromSeed@{createFromSeed}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::create\-From\-Seed (int {\em \_\-criteria}, \bf{Vertex} $\ast$ {\em \_\-seed}, \bf{Mesh} {\em \_\-mesh}, \bf{Map} {\em \_\-map})}\label{classSegment_a92bd7a43c0acf1ac6659ccc1b490e4b}
+
+
+Creates a segment within a specific criteria. 
+
+Creates a segment within a specific criteria.
+
+\begin{Desc}
+\item[Warning:]This function does not initialize neither the color of the segment, nor its id;\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-criteria}]: criteria of segment creation. Can be set as EQUAL, GREATER\_\-EQUAL or LESSER\_\-EQUAL. \item[{\em \_\-seed}]: \char`\"{}seed\char`\"{} vertex : the segment to create will grown from this vertex. \item[{\em \_\-mesh}]: The mesh containing the seed vertex. Essential to get the neighbourhood informations. \item[{\em \_\-map}]: map describing the vertices values.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!createFromSeed_Eq@{createFromSeed\_\-Eq}}
+\index{createFromSeed_Eq@{createFromSeed\_\-Eq}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::create\-From\-Seed\_\-Eq (\bf{Vertex} $\ast$ {\em \_\-seed}, \bf{Mesh} {\em \_\-mesh}, \bf{Map} {\em \_\-map})}\label{classSegment_c3322994ef9f5e15d5af9e100a9fd63a}
+
+
+Creates a segment within the \char`\"{}equal value\char`\"{} criteria. 
+
+Creates a segment within the \char`\"{}equal value\char`\"{} criteria : Every vertex with the same value than the seed value and which is a part of the segment neighbour will be added to the \doxyref{Segment}{p.}{classSegment}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-seed}]: \char`\"{}seed\char`\"{} vertex : the segment to create will grown from this vertex. \item[{\em \_\-mesh}]: The mesh containing the seed vertex. Essential to get the neighbourhood informations. \item[{\em \_\-map}]: map describing the vertices values.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Warning:]This function does not initialize neither the color of the segment, nor its id;\end{Desc}
+\begin{Desc}
+\item[Returns:](void)\end{Desc}
+\begin{Desc}
+\item[\bf{Todo}]il faudra penser pourquoi pas a ajouter un attribut feature a chaque vertex. Cela evitera de passer une map en parametre de cette methode. \end{Desc}
+\index{Segment@{Segment}!createFromSeed_GrEq@{createFromSeed\_\-GrEq}}
+\index{createFromSeed_GrEq@{createFromSeed\_\-GrEq}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::create\-From\-Seed\_\-Gr\-Eq (\bf{Vertex} $\ast$ {\em \_\-seed}, \bf{Mesh} {\em \_\-mesh}, \bf{Map} {\em \_\-map})}\label{classSegment_476a31ee59f2731c827d4b2b7b62f60c}
+
+
+Creates a segment within the \char`\"{}Greater or equal value\char`\"{} criteria. 
+
+Creates a segment within the \char`\"{}Greater or equal than value\char`\"{} criteria : Every vertex with the same value or a greater value than the seed value and which is a part of the segment neighbour will be added to the \doxyref{Segment}{p.}{classSegment}.
+
+\begin{Desc}
+\item[Warning:]This function does not initialize neither the color of the segment, nor its id;\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-seed}]: \char`\"{}seed\char`\"{} vertex : the segment to create will grown from this vertex. \item[{\em \_\-mesh}]: The mesh containing the seed vertex. Essential to get the neighbourhood informations. \item[{\em \_\-map}]: map describing the vertices values.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!createFromSeed_LeEq@{createFromSeed\_\-LeEq}}
+\index{createFromSeed_LeEq@{createFromSeed\_\-LeEq}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::create\-From\-Seed\_\-Le\-Eq (\bf{Vertex} $\ast$ {\em \_\-seed}, \bf{Mesh} {\em \_\-mesh}, \bf{Map} {\em \_\-map})}\label{classSegment_5402fb4da4fbfe4815f2fc95c925e68d}
+
+
+Creates a segment within the \char`\"{}Lesser or equal value\char`\"{} criteria. 
+
+Creates a segment within the \char`\"{}Lesser or equal value\char`\"{} criteria : Every vertex with the same value or a lesser value than the seed value and which is a part of the segment neighbour will be added to the \doxyref{Segment}{p.}{classSegment}.
+
+\begin{Desc}
+\item[Warning:]This function does not initialize neither the color of the segment, nor its id;\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-seed}]: \char`\"{}seed\char`\"{} vertex : the segment to create will grown from this vertex. \item[{\em \_\-mesh}]: The mesh containing the seed vertex. Essential to get the neighbourhood informations. \item[{\em \_\-map}]: map describing the vertices values.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!display@{display}}
+\index{display@{display}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display (int {\em \_\-mode} = {\tt FACES})}\label{classSegment_6dbefef7c167d2ca7a37c7fa7cc64290}
+
+
+Displays the \doxyref{Segment}{p.}{classSegment} in a selected mode. 
+
+Displays the \doxyref{Segment}{p.}{classSegment} in a selected mode.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-mode}]: mode to display the \doxyref{Segment}{p.}{classSegment}. Can be set to VERTICES, EDGES or FACES.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!display@{display}}
+\index{display@{display}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display (int {\em \_\-mode}, float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classSegment_736ad3b265e488035fcffddcb27fd0ae}
+
+
+Displays the \doxyref{Segment}{p.}{classSegment} in a selected mode. 
+
+Displays the \doxyref{Segment}{p.}{classSegment} in a selected mode.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-mode}]: mode to display the \doxyref{Segment}{p.}{classSegment}. Can be set to VERTICES, EDGES or FACES. \item[{\em \_\-r}]: Red component of the color to display. \item[{\em \_\-g}]: Green component of the color to display. \item[{\em \_\-b}]: Blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!displayEdges@{displayEdges}}
+\index{displayEdges@{displayEdges}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display\-Edges ()}\label{classSegment_d29631cc10617025910d72f6c7bb6e6f}
+
+
+Displays the edges contained in a \doxyref{Segment}{p.}{classSegment}. 
+
+Displays the edges contained in a \doxyref{Segment}{p.}{classSegment}. To make this methode faster, we can suppres the test of owning of boths vertices of the edge to the segment. This will be faster but some edges with an extremity which is not a part of the segment would be drawed;
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!displayEdges@{displayEdges}}
+\index{displayEdges@{displayEdges}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display\-Edges (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classSegment_b233a560d313669d46bd9061815d08e9}
+
+
+Displays the edges contained in a \doxyref{Segment}{p.}{classSegment}. 
+
+Displays the edges contained in a \doxyref{Segment}{p.}{classSegment}. To make this methode faster, we can suppres the test of owning of boths vertices of the edge to the segment. This will be faster but some edges with an extremity which is not a part of the segment would be drawed;
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: Red component of the color to display. \item[{\em \_\-g}]: Green component of the color to display. \item[{\em \_\-b}]: Blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!displayFaces@{displayFaces}}
+\index{displayFaces@{displayFaces}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display\-Faces ()}\label{classSegment_644b04f61c13f54df32345971eaad00e}
+
+
+Displays the faces contained in a \doxyref{Segment}{p.}{classSegment}. 
+
+Displays the faces contained in a \doxyref{Segment}{p.}{classSegment}. Every face containing at least one vertex of the segment is diaplyed.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!displayFaces@{displayFaces}}
+\index{displayFaces@{displayFaces}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display\-Faces (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classSegment_2315178a743049ade94858f88ccfb331}
+
+
+Displays the faces contained in a \doxyref{Segment}{p.}{classSegment}. 
+
+Displays the faces contained in a \doxyref{Segment}{p.}{classSegment} : Every face containing at least one vertex of the segment is diaplyed.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: Red component of the color to display. \item[{\em \_\-g}]: Green component of the color to display. \item[{\em \_\-b}]: Blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!displayVertices@{displayVertices}}
+\index{displayVertices@{displayVertices}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display\-Vertices ()}\label{classSegment_b08ace5123b7e9fa7411b5f47e333bf0}
+
+
+Displays the vertices contained in a \doxyref{Segment}{p.}{classSegment}. 
+
+Displays the vertices contained in a \doxyref{Segment}{p.}{classSegment}.
+
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!displayVertices@{displayVertices}}
+\index{displayVertices@{displayVertices}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::display\-Vertices (float {\em \_\-r}, float {\em \_\-g}, float {\em \_\-b})}\label{classSegment_fac09da29e62d5b40d13e10197dc63a5}
+
+
+Displays the vertices contained in a \doxyref{Segment}{p.}{classSegment}. 
+
+Displays the vertices contained in a \doxyref{Segment}{p.}{classSegment}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-r}]: Red component of the color to display. \item[{\em \_\-g}]: Green component of the color to display. \item[{\em \_\-b}]: Blue component of the color to display.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!getColor@{getColor}}
+\index{getColor@{getColor}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Segment::get\-Color ()}\label{classSegment_c9c07f065d5862423233810d4ae648a5}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the color of the \doxyref{Segment}{p.}{classSegment}. \end{Desc}
+\index{Segment@{Segment}!getColorArray@{getColorArray}}
+\index{getColorArray@{getColorArray}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Segment::get\-Color\-Array ()}\label{classSegment_56e59847a3cbf75d920009acf7ad8427}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the color of the \doxyref{Segment}{p.}{classSegment} in a double[3] array. \end{Desc}
+\index{Segment@{Segment}!getDepth@{getDepth}}
+\index{getDepth@{getDepth}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Segment::get\-Depth ()}\label{classSegment_267773da7d5557f5b9baa2b3c1321e6e}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the depth of the \doxyref{Segment}{p.}{classSegment}. \end{Desc}
+\index{Segment@{Segment}!getID@{getID}}
+\index{getID@{getID}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Segment::get\-ID ()}\label{classSegment_d9115f2dcb93c661d862c89cf0f4bf85}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Returns:](int) returns the ID of the \doxyref{Segment}{p.}{classSegment}. \end{Desc}
+\index{Segment@{Segment}!getVerts@{getVerts}}
+\index{getVerts@{getVerts}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}list$<$\bf{Vertex}$\ast$$>$ Segment::get\-Verts ()}\label{classSegment_b8a16f124eb4c0ee1ca7cd05d57d4a93}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Returns:](int) returns a list containing each vertex that is a part of the \doxyref{Segment}{p.}{classSegment}. \end{Desc}
+\index{Segment@{Segment}!operator=@{operator=}}
+\index{operator=@{operator=}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Segment}\& Segment::operator= (const \bf{Segment} \& {\em \_\-s})}\label{classSegment_8edfed349ba9edd50e612e85ae8dcadd}
+
+
+Affectation operator of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Affectation operator of the \doxyref{Segment}{p.}{classSegment} class. \index{Segment@{Segment}!setColor@{setColor}}
+\index{setColor@{setColor}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::set\-Color (\bf{Vector3D} {\em \_\-color})}\label{classSegment_1fe06bee4a189417f811d3c52eef5063}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-color}]: Color to attribute to the segment.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!setDepth@{setDepth}}
+\index{setDepth@{setDepth}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::set\-Depth (double {\em \_\-depth})}\label{classSegment_41492a1bec74a39d6111cba7e86bde3f}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-depth}]: Depth to attribute to the segment.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!setID@{setID}}
+\index{setID@{setID}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::set\-ID (int {\em \_\-ID})}\label{classSegment_8e3b1dde2ba11cc8169919772e6aa936}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-ID}]: ID to attribute to the segment.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+\index{Segment@{Segment}!setVerts@{setVerts}}
+\index{setVerts@{setVerts}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Segment::set\-Verts (list$<$ \bf{Vertex} $\ast$ $>$ {\em \_\-v})}\label{classSegment_c7fba21d290fcfaff32112d99c0790c5}
+
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class. 
+
+Getter of the \doxyref{Segment}{p.}{classSegment} class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-v}]: list of vertex containing each vertex of the segment.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:](void) \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Segment@{Segment}!color@{color}}
+\index{color@{color}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Vector3D} Segment::color\hspace{0.3cm}{\tt  [private]}}\label{classSegment_f1548839201da2859051a75f5335257f}
+
+
+$<$Every segment is given a depth according to a map. \index{Segment@{Segment}!depth@{depth}}
+\index{depth@{depth}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double Segment::depth\hspace{0.3cm}{\tt  [private]}}\label{classSegment_3aa0e978aac1ee768e74026a6d448a21}
+
+
+$<$Every segment is given an ID which should be unique. \index{Segment@{Segment}!verts@{verts}}
+\index{verts@{verts}!Segment@{Segment}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}list$<$\bf{Vertex}$\ast$$>$ Segment::verts\hspace{0.3cm}{\tt  [private]}}\label{classSegment_8f3b9fddcc5499141b458f066e280886}
+
+
+$<$Every segment is given a color to facilitate the future display methods. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/joris/Projets/Internship/Code/GMTOOLS\_\-CPP/simple-mesh-library/inc/\bf{segment.h}\end{CompactItemize}
